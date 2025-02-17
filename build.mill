@@ -1,0 +1,30 @@
+package build
+
+import $ivy.`com.disneystreaming.smithy4s::smithy4s-mill-codegen-plugin::0.18.29`
+
+import mill._
+import mill.scalalib._
+import smithy4s.codegen.mill._
+
+trait Scala3Dot6Dot3Module extends ScalaModule {
+  def scalaVersion = "3.6.3"
+}
+
+object `presume-models` extends Scala3Dot6Dot3Module with Smithy4sModule{
+  def ivyDeps = Agg(
+    ivy"com.disneystreaming.smithy4s::smithy4s-core:${smithy4sVersion()}"
+  )
+}
+
+object `presume-cli` extends Scala3Dot6Dot3Module {
+  def ivyDeps = Agg(
+    ivy"com.lihaoyi::scalatags:0.13.1",
+    ivy"com.lihaoyi::os-lib:0.11.3",
+    ivy"com.monovore::decline-effect:2.5.0",
+    ivy"com.disneystreaming.smithy4s::smithy4s-xml:0.18.29"
+  )
+
+  def moduleDeps = Seq(
+    `presume-models`
+  )
+}

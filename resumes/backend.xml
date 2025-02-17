@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This resume is for backend-focused positions. -->
+<ResumeContent>
+  <header>
+    <name>Branden Vennes</name>
+    <email>b.n.vennes@gmail.com</email>
+    <gitHubName>github.com/b-vennes</gitHubName>
+  </header>
+  <experience>
+    <member>
+      <business>The Walt Disney Company</business>
+      <title>Software Engineer P2</title>
+      <startDate>
+        <year>2022</year>
+        <month>JUNE</month>
+      </startDate>
+      <endDate><present/></endDate>
+      <experience>
+        <member>
+          Maintained and operated an event schema registry with Smithy schemas and Scala, Java, and Python code-generated types.
+        </member>
+      </experience>
+    </member>
+    <member>
+      <business>Topl</business>
+      <title>Platform Engineer</title>
+      <startDate>
+        <year>2021</year>
+        <month>MARCH</month>
+      </startDate>
+      <endDate>
+        <date>
+          <year>2022</year>
+          <month>JUNE</month>
+        </date>
+      </endDate>
+      <experience>
+        <member>
+          Implemented improvements for a distributed log built with proof-of-stake blockchain techniques with Scala and Akka.
+        </member>
+      </experience>
+    </member>
+    <member>
+      <business>Trimble</business>
+      <title>Full-Stack Software Engineer</title>
+      <startDate>
+        <year>2019</year>
+        <month>SEPTEMBER</month>
+      </startDate>
+      <endDate>
+        <date>
+          <year>2021</year>
+          <month>MARCH</month>
+        </date>
+      </endDate>
+      <experience>
+        <member>
+          Developed front-end features for a web application in Angular and TypeScript.
+        </member>
+        <member>
+          Developed back-end features for web microservices using C# and Azure cloud resources.
+        </member>
+      </experience>
+    </member>
+    <member>
+      <title>QA Engineer</title>
+      <business>Trimble</business>
+      <startDate>
+        <year>2019</year>
+        <month>JANUARY</month>
+      </startDate>
+      <endDate>
+        <date>
+          <year>2019</year>
+          <month>SEPTEMBER</month>
+        </date>
+      </endDate>
+      <experience>
+        <member>
+          Performed QA manual testing on a web application.
+        </member>
+      </experience>
+    </member>
+  </experience>
+  <education>
+    <member>
+      <schoolName>University of Portland</schoolName>
+      <certificateType>Bachelor's of Science</certificateType>
+      <additional>
+        <member>Computer Science Major</member>
+        <member>Mathematics Minor</member>
+      </additional>
+      <startDate>
+        <year>2015</year>
+        <month>AUGUST</month>
+      </startDate>
+      <endDate>
+        <date>
+          <year>2019</year>
+          <month>MAY</month>
+        </date>
+      </endDate>
+    </member>
+  </education>
+</ResumeContent>
