@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>{{- .Header.Name -}}'s CV</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div
+      id="root"
+      class="flex flex-row justify-center bg-slate-600 print:bg-transparent w-full h-full">
+      <div
+        id="resume"
+        class="flex flex-col gap-3 m-1 p-2 border-2 border-black rounded-sm w-2/3 bg-rose-50 print:bg-transparent print:w-full print:h-full"
+      >
+        <div id="header" class="flex flex-col gap-4">
+          <p
+            id="name"
+            class="text-4xl font-serif"
+          >
+            {{- .Header.Name -}}
+          </p>
+          <div
+            id="header-details"
+            class="flex flex-row flex-nowrap gap-2"
+          >
+            <div class="flex flex-row rounded-xl border-1 border-black px-1 gap-1">
+              <p class="italic text-xs">Email</p>
+              <p class="text-sm">{{- .Header.Email -}}</p>
+            </div>
+            <div class="flex flex-row rounded-xl border-1 border-black px-1 gap-1">
+              <p class="italic text-xs">GitHub</p>
+              <p class="text-sm">{{- .Header.Github -}}</p>
+            </div>
+          </div>
+        </div>
+        <div id="experience" class="flex flex-col gap-2 p-2 border-1 border-black rounded-md">
+          {{range .Experience}}
+          <div>
+            <p class="text-lg font-serif">{{- .Business -}}</p>
+            <p>{{- .Title -}}</p>
+            <p class="text-xs font-mono">{{- .StartDate }} - {{ .EndDate -}}</p>
+            <ul class="list-disc list-inside">
+            {{range .Details}}
+            <li>
+              {{- . -}}
+            </li>
+            {{end}}
+            </ul>
+          </div>
+          {{end}}
+        </div>
+        <div id="education" class="flex flex-col gap-2 p-2 border-1 border-black rounded-md">
+          {{range .Education}}
+          <div>
+            <p class="text-lg font-serif">{{- .School -}}</p>
+            <p class="text-xs font-mono">{{- .StartDate }} - {{.EndDate -}}</p>
+            <p class="text-md">{{- .Degree -}}</p>
+            <ul>
+            {{range .Details }}
+              <li class="text-sm list-disc list-inside">
+                {{- . -}}
+              </li>
+            {{end}}
+            </ul>
+          </div>
+          {{end}}
+        </div>
+        {{ if .Certifications }}
+        <div id="certifications" class="flex flex-col gap-2 p-2 border-1 border-black rounded-md">
+          <p class="text-lg font-serif">Certifications</p>
+          {{range .Certifications}}
+          <div>
+            <p class="font-md">{{ .Name }}</p>
+          </div>
+          {{end}}
+        </div>
+        {{end}}
+        <div id="skills" class="grid grid-cols-3 gap-2">
+          {{range .Skills}}
+          <div class="p-2 border-1 border-black rounded-lg">
+            <p class="text-md font-serif">
+              {{- .Group -}}
+            </p>
+            <ul>
+              {{range .Skills}}
+              <li class="text-sm list-disc list-inside">
+                {{ . }}
+              </li>
+              {{end}}
+            </ul>
+          </div>
+          {{end}}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

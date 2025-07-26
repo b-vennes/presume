@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This CV is for backend-focused positions. -->
+<resume-content
+  xmlns="https://github.com/b-vennes/presume"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://github.com/b-vennes/presume cvSchema.xsd"
+>
+  <header
+    name="Branden Vennes"
+    email="b dot n dot vennes at gmail dot com"
+    github="b-vennes"
+  />
+  <experience
+    business="The Walt Disney Company"
+    title="Software Engineer II"
+  >
+    <start-date year="2022" month="6" />
+    <detail>
+      Enhanced the company's data events Schema Registry supporting 100s of domains across dozens of teams in the organization including financial data, user preferences, and streaming video content metadata specialties.
+    </detail>
+    <detail>
+      Implemented schema-based code generation tools for creating Scala, Java, and Python library artifacts from AWS Smithy schema definitions saving teams hundreds of hours in manual language development.
+    </detail>
+    <detail>
+      Maintained robust language support including JSON and Protobuf serialization and AWS Kinesis interoperability for all types defined in the Schema Registry.
+    </detail>
+    <detail>
+      Secured and governed schema changes using GitHub Actions and Jenkins continuous-integration pipelines to ensure compatibility, safety, and organizational acceptance of schema changes.
+    </detail>
+  </experience>
+  <experience
+    business="Topl"
+    title="Blockchain Platform Engineer"
+  >
+    <start-date year="2021" month="3" />
+    <end-date year="2022" month="5" />
+    <detail>
+      Developed the company's core blockchain platform driving user transactions and integration value.
+    </detail>
+    <detail>
+      Implemented a fast transaction search endpoint for clients using MongoDB indexing and Protobuf for data transfer.
+    </detail>
+    <detail>
+      Maintained and improved implementations of low-level security algorithms to maintain blockchain stability and security.
+    </detail>
+  </experience>
+  <experience
+    business="Viewpoint Construction Software"
+    title="Software Engineer I &amp; II"
+  >
+    <start-date year="2019" month="9" />
+    <end-date year="2021" month="4" />
+  </experience>
+  <experience
+    business="Viewpoint Construction Software"
+    title="QA Automation Engineer"
+  >
+    <start-date year="2018" month="8" />
+    <end-date year="2019" month="8" />
+  </experience>
+  <education
+    school="University of Portland"
+    degree="Bachelors of Science"
+  >
+    <start-date year="2015" month="8" />
+    <end-date year="2019" month="5" />
+    <detail>Computer Science Major</detail>
+    <detail>Mathematics Minor</detail>
+  </education>
+  <certification name="AWS Cloud Practitioner"/>
+  <skills group="Backend and Platform Development">
+    <skill>Scala</skill>
+    <skill>Java</skill>
+    <skill>Python</skill>
+    <skill>C#/.NET</skill>
+    <skill>Go</skill>
+    <skill>Asynchronous Steps and Multithreading</skill>
+  </skills>
+  <skills group="Frontend and Application Software">
+    <skill>JavaScript</skill>
+    <skill>TypeScript</skill>
+    <skill>Scala.js</skill>
+    <skill>Electron</skill>
+  </skills>
+  <skills group="Data Engineering">
+    <skill>AWS Kinesis</skill>
+    <skill>PostgreSQL</skill>
+    <skill>Spark</skill>
+    <skill>Databricks</skill>
+    <skill>Smithy</skill>
+    <skill>XML</skill>
+    <skill>Protobuf</skill>
+  </skills>
+</resume-content>
