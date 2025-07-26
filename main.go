@@ -34,6 +34,7 @@ func main() {
     for _, e := range errs {
       fmt.Println(e)
     }
+    fmt.Println("Run `presume --help` for additional info.")
     return
   }
 
