@@ -39,6 +39,12 @@
   </xs:element>
 
   <xs:complexType name="header">
+    <xs:sequence>
+      <xs:element
+        name="summary"
+        type="xs:string"
+      />
+    </xs:sequence>
     <xs:attribute
       name="name"
       type="xs:string"

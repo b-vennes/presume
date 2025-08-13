@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Complete CV for Branden Vennes - Full Stack Developer
+-->
+<resume-content
+  xmlns="https://github.com/b-vennes/presume"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://github.com/b-vennes/presume cv-schema.xsd"
+>
+
+  <header
+    name="Branden Vennes"
+    email="b.n.vennes@gmail.com"
+    github="b-vennes"
+  >
+    <summary>
+      Experienced full-stack software engineer with 6+ years developing scalable distributed systems, data platforms, and web applications. Proven track record building microservices, blockchain platforms, and event-driven architectures using modern technologies including Scala, Java, C#, AWS, and React. Strong expertise in data streaming, schema management, and both SQL and NoSQL databases.
+    </summary>
+  </header>
+
+  <experience
+    business="The Walt Disney Company"
+    title="Software Engineer II"
+  >
+    <start-date year="2022" month="6" />
+
+    <detail>
+      Engineer on data platform team providing schema registry and AWS Kinesis integration libraries supporting content metadata, financial, experimentation, and telemetry use-cases across Disney+ and Hulu
+    </detail>
+    <detail>
+      Built stream snapshot system allowing teams to maintain state from AWS Kinesis streams using functional state management patterns in Scala
+    </detail>
+    <detail>
+      Migrated event schemas from OpenAPI to AWS Smithy with comprehensive compatibility validation and semantic versioning
+    </detail>
+    <detail>
+      Developed multi-language artifact publishing pipeline supporting Scala, Java, Python, and Protobuf with automated JSON serialization using Circe, Jsoniter, and custom Python encoders
+    </detail>
+    <detail>
+      Implemented Spark jobs for Databricks data lake integration using Deltalake format with S3 storage for analytics dashboards
+    </detail>
+    <detail>
+      Built complex CI/CD pipelines using Jenkins and GitHub Actions for schema validation and artifact deployment
+    </detail>
+  </experience>
+
+  <experience
+    business="Topl"
+    title="Blockchain Platform Engineer"
+  >
+    <start-date year="2021" month="3" />
+    <end-date year="2022" month="5" />
+    <detail>
+      Core developer on proof-of-stake blockchain platform for supply chain verification and ethical business tracking
+    </detail>
+    <detail>
+      Built distributed node network using Akka actors with TCP communication and HTTP API for node management and transaction signing
+    </detail>
+    <detail>
+      Developed transaction streaming client using Scala http4s, Cats Effect, and MongoDB with Protobuf API for real-time transaction indexing
+    </detail>
+    <detail>
+      Created React proof-of-concept UI demonstrating transaction streaming integration for client applications
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="Software Engineer I &amp; II"
+  >
+    <start-date year="2019" month="9" />
+    <end-date year="2021" month="4" />
+    <detail>
+      Full-stack developer on construction project management web application handling submittals, RFIs, and change orders
+    </detail>
+    <detail>
+      Architected cutting-edge Event Sourced change management system with state derived from event streams, integrated with enterprise resource management application
+    </detail>
+    <detail>
+      Built end-to-end features across C# .NET microservices, MSSQL and Event Store databases, and web UI components deployed on Azure
+    </detail>
+    <detail>
+      Implemented sophisticated change order tracking system with cross-entity referencing and real-time synchronization
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="QA Automation Engineer"
+  >
+    <start-date year="2018" month="8" />
+    <end-date year="2019" month="8" />
+    <detail>
+      Developed comprehensive test automation framework enabling non-technical team members to write API and UI tests using simple C# code
+    </detail>
+    <detail>
+      Built Selenium-based UI testing framework with XPath targeting for headless and browser-based test execution
+    </detail>
+    <detail>
+      Executed performance testing suites and bulk operations to ensure application responsiveness and scalability
+    </detail>
+    <detail>
+      Performed manual testing including test case development, execution, and continuous improvement processes
+    </detail>
+  </experience>
+
+  <education
+    school="University of Portland"
+    degree="Bachelors of Science"
+  >
+    <start-date year="2015" month="8" />
+    <end-date year="2019" month="5" />
+    <detail>Computer Science Major</detail>
+    <detail>Mathematics Minor</detail>
+  </education>
+
+  <certification name="AWS Cloud Practitioner"/>
+
+  <skills group="Programming Languages">
+    <skill>Scala</skill>
+    <skill>Java</skill>
+    <skill>C#</skill>
+    <skill>Python</skill>
+    <skill>JavaScript/TypeScript</skill>
+  </skills>
+
+  <skills group="Web Technologies">
+    <skill>React</skill>
+    <skill>HTML/CSS</skill>
+    <skill>REST APIs</skill>
+    <skill>http4s</skill>
+    <skill>.NET Core</skill>
+    <skill>Microservices</skill>
+  </skills>
+
+  <skills group="Cloud &amp; Infrastructure">
+    <skill>AWS (Kinesis, DynamoDB, S3, IAM)</skill>
+    <skill>Azure</skill>
+    <skill>Docker</skill>
+    <skill>CI/CD (Jenkins, GitHub Actions)</skill>
+    <skill>Databricks</skill>
+    <skill>Spark</skill>
+  </skills>
+
+  <skills group="Databases">
+    <skill>MSSQL</skill>
+    <skill>MongoDB</skill>
+    <skill>DynamoDB</skill>
+    <skill>Event Store</skill>
+    <skill>Deltalake/Parquet</skill>
+  </skills>
+
+  <skills group="Frameworks &amp; Libraries">
+    <skill>Akka</skill>
+    <skill>Cats Effect</skill>
+    <skill>Circe</skill>
+    <skill>Selenium</skill>
+    <skill>Protobuf</skill>
+    <skill>AWS Smithy</skill>
+  </skills>
+
+  <skills group="Architecture &amp; Design">
+    <skill>Event Sourcing</skill>
+    <skill>Stream Processing</skill>
+    <skill>Distributed Systems</skill>
+    <skill>Blockchain Technology</skill>
+    <skill>Schema Management</skill>
+    <skill>Functional Programming</skill>
+  </skills>
+
+</resume-content>

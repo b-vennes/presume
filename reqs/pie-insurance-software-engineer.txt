@@ -1,0 +1,32 @@
+Pie's mission is to empower small businesses to thrive by making commercial insurance affordable and as easy as pie. We leverage technology to transform how small businesses buy and experience commercial insurance.
+
+Like our small business customers, we are a diverse team of builders, dreamers, and entrepreneurs who are driven by core values and operating principles that guide every decision we make.
+
+Pie Insurance’s Technology team builds and operates a suite of applications and services that allow direct consumers, partners, and agents to manage commercial insurance policies. The team collaborates closely with our business partners to design and implement new features to help the company scale with increasing demand.
+
+We are seeking highly motivated and accomplished Backend Engineers who encourage an environment where engineers are thought leaders and foster a culture of diversity and inclusion. Acting as leaders across the organization on design, architecture, and best practice, they elevate those around them and push the company forward.
+How You’ll Do It
+
+    You’ll write clean, maintainable, and efficient code primarily in Typescript (with some C# preferred).
+    You’ll participate in peer code reviews, ensuring the delivery of high-quality code and adherence to coding standards.
+    You’ll collaborate transparently with product management, designers, stakeholders, and fellow engineers throughout the development process.
+    You’ll help shape the design and architecture of scalable, secure, and robust systems and applications.
+    You’ll deliver software using continuous delivery pipelines, contributing to enhancing and optimizing these pipelines.
+    You’ll assist our support and operations teams by triaging and resolving production issues in a timely manner.
+    You’ll build highly modular and reusable code while adhering to industry standards and best practices.
+    You’ll participate in on-call rotations, consistently seeking opportunities to improve operational stability and system visibility.
+    You’ll continuously learn and stay up-to-date on software engineering best practices and new technologies to improve our systems.
+
+The Right Stuff
+
+    2+ years of software development experience with proficiency in languages like TypeScript and/or JavaScript (C# is a plus).
+    Understanding of cloud services, particularly AWS.
+    Experience with SQL and/or NoSQL databases.
+    Familiarity with Agile methodologies like Scrum, focusing on code quality, secure development, and performance.
+    Experience working in complex team environments with the ability to deliver high-quality results under pressure.
+    An agile mindset with a focus on delivering small, incremental improvements that benefit the customer.
+    Proficiency in crafting technical solutions with ambiguous requirements, demonstrating adaptability, independence, and autonomy.
+    Understanding of CI/CD best practices and experience in continuous integration/delivery.
+    Familiarity with microservices and service-oriented architecture.
+
+  https://www.builtinaustin.com/home/jobs/matches?preferenceId=69411c76-6e11-42e0-99b0-8a36ac19f23d&jobPreferenceEnum=All&industryId=416&jobid=6739510

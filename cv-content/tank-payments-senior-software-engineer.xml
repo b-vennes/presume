@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Tailored CV for Tank Payments Senior Software Engineer position
+-->
+<resume-content
+  xmlns="https://github.com/b-vennes/presume"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://github.com/b-vennes/presume cv-schema.xsd"
+>
+
+  <header
+    name="Branden Vennes"
+    email="b.n.vennes@gmail.com"
+    github="b-vennes"
+  >
+    <summary>
+      Full-stack software engineer with 5+ years building scalable, mission-critical systems handling large-scale data processing and financial transactions. Proven expertise in cloud infrastructure, event-driven architectures, and designing systems with strong data integrity guarantees. Experience implementing comprehensive validation pipelines, audit trails, and fault-tolerant architectures that maintain reliability under high load. AWS certified with entrepreneurial mindset from blockchain startup experience. Passionate about building robust data systems and secure payment infrastructure.
+    </summary>
+  </header>
+
+  <experience
+    business="The Walt Disney Company"
+    title="Software Engineer II"
+  >
+    <start-date year="2022" month="6" />
+
+    <detail>Built and maintained highly scalable streaming data platform serving millions of users across Disney+ and Hulu, processing massive volumes of real-time events through AWS Kinesis streams</detail>
+    <detail>Architected state management systems handling critical content metadata for all Disney+ and Hulu television, movie, and sports content with zero-downtime requirements</detail>
+    <detail>Developed comprehensive schema registry and validation pipelines ensuring data compatibility across distributed systems, preventing costly production failures</detail>
+    <detail>Implemented multi-language artifact generation (Scala, Java, Python) with Protobuf serialization for cross-platform compatibility</detail>
+    <detail>Built real-time data lake integration using Spark, Databricks, and S3 with Parquet/Deltalake format for analytics and performance monitoring</detail>
+    <detail>Collaborated closely with product development teams to support the delivery of seamless user experiences across the full technology stack</detail>
+  </experience>
+
+  <experience
+    business="Topl"
+    title="Blockchain Platform Engineer"
+  >
+    <start-date year="2021" month="3" />
+    <end-date year="2022" month="5" />
+    <detail>Core developer on proof-of-stake blockchain platform for supply chain verification, handling secure financial transactions and tracing in early-stage startup environment</detail>
+    <detail>Built fault-tolerant distributed system using Akka actors with TCP networking, ensuring 24/7 availability for mission-critical blockchain operations</detail>
+    <detail>Developed comprehensive HTTP API for node management including transaction signing, key rotation, and security controls</detail>
+    <detail>Created real-time transaction streaming service using Scala, http4s, Cats Effect, and MongoDB with Protobuf API for scalable client integrations</detail>
+    <detail>Built proof-of-concept React dashboard demonstrating transaction monitoring and searching capabilities</detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="Software Engineer I &amp; II"
+  >
+    <start-date year="2019" month="9" />
+    <end-date year="2021" month="4" />
+    <detail>Developed full-stack solutions for construction project management platform serving thousands of users with complex organizational workflows</detail>
+    <detail>Architected cutting-edge Event Sourced system for change order management, storing all user interactions as immutable events with complete audit trails</detail>
+    <detail>Built sophisticated change tracking system with financial lineage features integrated with the company's enterprise resource management systems</detail>
+    <detail>Implemented microservices architecture using C#/.NET deployed on Azure cloud infrastructure with MSSQL and Event Store databases</detail>
+    <detail>Delivered features spanning database modeling, REST APIs, and responsive web UI components with focus on reliability and user experience</detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="QA Automation Engineer"
+  >
+    <start-date year="2018" month="8" />
+    <end-date year="2019" month="8" />
+    <detail>Designed and implemented a comprehensive test automation framework enabling non-technical team members to define and execute complex test scenarios</detail>
+    <detail>Built API testing framework for microservices validation and Selenium-based UI testing with XPath selectors for browser automation</detail>
+    <detail>Conducted performance testing and load analysis to ensure system scalability and responsiveness under high-volume conditions</detail>
+    <detail>Developed quality assurance processes ensuring reliable software delivery and reducing production defects</detail>
+  </experience>
+
+  <education
+    school="University of Portland"
+    degree="Bachelors of Science"
+  >
+    <start-date year="2015" month="8" />
+    <end-date year="2019" month="5" />
+    <detail>Computer Science Major</detail>
+    <detail>Mathematics Minor</detail>
+  </education>
+
+  <certification name="AWS Cloud Practitioner"/>
+
+  <skills group="Cloud &amp; Infrastructure">
+    <skill>AWS (Kinesis, IAM, DynamoDB, S3)</skill>
+    <skill>Azure Cloud Platform</skill>
+    <skill>Databricks &amp; Spark</skill>
+    <skill>High-availability system design</skill>
+  </skills>
+
+  <skills group="Backend Development">
+    <skill>Scala (Akka, Cats Effect, http4s, Circe)</skill>
+    <skill>Java &amp; JVM ecosystem</skill>
+    <skill>C# &amp; .NET Core</skill>
+    <skill>Python</skill>
+    <skill>Event-driven architectures</skill>
+    <skill>Microservices</skill>
+  </skills>
+
+  <skills group="Data &amp; Messaging">
+    <skill>AWS Kinesis streams</skill>
+    <skill>Protobuf serialization</skill>
+    <skill>Event Sourcing</skill>
+    <skill>Real-time data processing</skill>
+    <skill>MongoDB, MSSql, DynamoDB</skill>
+    <skill>Parquet &amp; Deltalake</skill>
+  </skills>
+
+  <skills group="Frontend &amp; Full-stack">
+    <skill>React &amp; JavaScript</skill>
+    <skill>REST API design</skill>
+    <skill>JSON serialization</skill>
+    <skill>Web technologies</skill>
+  </skills>
+
+  <skills group="Quality &amp; Testing">
+    <skill>Test automation frameworks</skill>
+    <skill>Selenium WebDriver</skill>
+    <skill>Performance testing</skill>
+    <skill>Scala-check property testing</skill>
+  </skills>
+
+  <skills group="Blockchain &amp; Security">
+    <skill>Blockchain development</skill>
+    <skill>Cryptographic key management</skill>
+    <skill>Secure transaction processing</skill>
+  </skills>
+
+</resume-content>

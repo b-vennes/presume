@@ -1,0 +1,59 @@
+Life at UiPath
+
+The people at UiPath believe in the transformative power of automation to change how the world works. We’re committed to creating category-leading enterprise software that unleashes that power.
+
+To make that happen, we need people who are curious, self-propelled, generous, and genuine. People who love being part of a fast-moving, fast-thinking growth company. And people who care—about each other, about UiPath, and about our larger purpose.
+
+Could that be you?
+
+Your mission
+
+AI-powered technology is advancing at an unprecedented pace, reshaping the way we work and innovate. At UiPath, we are at the forefront of this transformation, building Agentic Automation that combines cutting-edge AI models with our industry-leading automation platform. Our mission? To empower people to achieve more by redefining automation.
+
+Are you ready to be part of the UiPath rocket ship and help shape the future of work?
+
+As a Senior Software Engineer at UiPath, you’ll join a core engineering team focused on building high-impact, scalable products. With millions of users worldwide, we require robust infrastructure, high-quality code, code, and strong collaboration across globally distributed teams.
+
+What you'll do at UiPath
+
+    Architect and develop foundational design kits, component libraries, and frameworks that enable high-quality user experiences across UiPath’s product ecosystem.
+
+    Collaborate closely with Product and Design teams to define and refine building blocks, guidelines, and best practices that elevate our engineering standards.
+
+    Advocate for and educate teams on design system best practices to ensure consistency, usability, and efficiency.
+
+    Drive innovation by bringing fresh ideas to the table and defining next-generation interfaces that enhance automation experiences.
+
+    Create high-fidelity interactive prototypes to communicate ideas, leveraging user research and data to inform decisions.
+
+    Stay ahead of industry trends, evaluating and integrating emerging technologies that enhance our platform.
+
+    Continuously improve engineering practices to enhance quality, velocity, and team productivity.
+
+    Mentor and develop junior engineers, fostering a culture of learning and technical excellence.
+
+    Help attract and hire top engineering talent, shaping the future of our team.
+
+What you'll bring to the team
+
+    6+ years of fullstack software development experience, with strong engineering fundamentals.
+
+    Expertise in one or more modern frontend frameworks such as React or Angular.
+
+    Expertise in one or more programming languages: C#, Rust, Java, or Go.
+
+    Experience with modern software engineering practices, including Agile development, CI/CD, and DevOps.
+
+    Familiarity with microservices architecture, API development, and distributed systems.
+
+    Deep understanding of multithreading, synchronization, asynchronous programming, and cloud computing.
+
+    Strong grasp of data structures, algorithms, and system design.Bonus points for:o
+
+    Experience with AI/ML development
+
+    Exposure to cloud platforms like Azure, AWS, or Google Cloud, and services such as AKS or GKE
+
+    Experience with modern UI/UX patterns and best practices
+
+https://www.uipath.com/careers/jobs?ashby_jid=dd1c8ed3-efdf-41ae-b997-8081c019029f

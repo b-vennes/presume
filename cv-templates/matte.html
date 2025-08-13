@@ -20,6 +20,9 @@
           >
             {{- .Header.Name -}}
           </p>
+          <p id="summary" class="text-sm">
+            {{- .Header.Summary -}}
+          </p>
           <div
             id="header-details"
             class="flex flex-row flex-nowrap gap-2"
@@ -50,35 +53,37 @@
           </div>
           {{end}}
         </div>
-        <div id="education" class="flex flex-col gap-2 p-2 border-1 border-black rounded-md">
-          {{range .Education}}
-          <div>
-            <p class="text-lg font-serif">{{- .School -}}</p>
-            <p class="text-xs font-mono">{{- .StartDate }} - {{.EndDate -}}</p>
-            <p class="text-md">{{- .Degree -}}</p>
-            <ul>
-            {{range .Details }}
-              <li class="text-sm list-disc list-inside">
-                {{- . -}}
-              </li>
+        <div id="training" class="grid grid-cols-2 gap-2">
+          <div id="education" class="flex flex-col gap-2 p-2 border-1 border-black rounded-md">
+            {{range .Education}}
+            <div>
+              <p class="text-lg font-serif">{{- .School -}}</p>
+              <p class="text-xs font-mono">{{- .StartDate }} - {{.EndDate -}}</p>
+              <p class="text-md">{{- .Degree -}}</p>
+              <ul>
+              {{range .Details }}
+                <li class="text-sm list-disc list-inside">
+                  {{- . -}}
+                </li>
+              {{end}}
+              </ul>
+            </div>
             {{end}}
-            </ul>
           </div>
-          {{end}}
         </div>
-        {{ if .Certifications }}
-        <div id="certifications" class="flex flex-col gap-2 p-2 border-1 border-black rounded-md">
-          <p class="text-lg font-serif">Certifications</p>
-          {{range .Certifications}}
-          <div>
-            <p class="font-md">{{ .Name }}</p>
-          </div>
-          {{end}}
-        </div>
-        {{end}}
         <div id="skills" class="grid grid-cols-3 gap-2">
+          {{ if .Certifications }}
+          <div id="certifications" class="flex flex-col gap-2 p-2 border-1 border-black rounded-md">
+            <p class="text-lg font-serif">Certifications</p>
+            {{range .Certifications}}
+            <div>
+              <p class="font-md">{{ .Name }}</p>
+            </div>
+            {{end}}
+          </div>
+          {{end}}
           {{range .Skills}}
-          <div class="p-2 border-1 border-black rounded-lg">
+          <div class="p-2 border-1 border-black rounded-md">
             <p class="text-md font-serif">
               {{- .Group -}}
             </p>
