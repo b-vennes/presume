@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Tailored CV for Branden Vennes - Procore Senior Data Engineer Position
+  Emphasizing data engineering, ETL/ELT workflows, streaming data platforms, and relevant technical skills
+-->
+<resume-content
+  xmlns="https://github.com/b-vennes/presume"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://github.com/b-vennes/presume cv-schema.xsd"
+>
+
+  <header
+    name="Branden Vennes"
+    email="b.n.vennes@gmail.com"
+    github="b-vennes"
+    site="www.brandenvennes.com"
+  >
+    <summary>
+      Experienced data engineer with 6+ years developing scalable streaming data platforms and ETL/ELT pipelines, processing millions of real-time events across distributed systems. Proven expertise architecting data warehouses, schema registries, and analytics platforms serving 50+ engineering teams. Strong background in SQL, Python, AWS services, and modern data stack technologies with hands-on experience in Databricks, Spark, and data lake architectures. AWS certified with demonstrated ability to mentor junior engineers and drive continuous improvement of data platforms.
+    </summary>
+  </header>
+
+  <experience
+    business="The Walt Disney Company"
+    title="Software Engineer II - Streaming Data Platform"
+  >
+    <start-date year="2022" month="6" />
+    <end-date year="2025" month="8" />
+
+    <detail>
+      Architected and maintained an enterprise-scale streaming data platform processing millions of daily events through AWS Kinesis, DynamoDB, and S3, serving 50+ engineering teams across Disney+ and Hulu with zero-downtime requirements
+    </detail>
+    <detail>
+      Designed and implemented comprehensive ETL workflows for data ingestion, cleansing, and integration from multiple source systems including internal APIs, third-party services, and cloud-based event streams
+    </detail>
+    <detail>
+      Built robust data pipelines using modern data stack technologies including Spark, Databricks, and Parquet format with automated data lake storage in S3 for analytics dashboards and machine learning workflows
+    </detail>
+    <detail>
+      Developed a sophisticated schema registry supporting backwards and forwards compatible data evolution using AWS Smithy, ensuring data quality and consistency across distributed microservices with automated validation and compatibility checks
+    </detail>
+    <detail>
+      Implemented a real-time stream processing system enabling teams to maintain application state from event streams, successfully integrated into the company's content metadata unification project processing millions of entertainment entities
+    </detail>
+    <detail>
+      Created a multi-language data serialization pipeline generating Python, Java, and Scala artifacts with JSON and Protobuf support, enabling seamless data consumption across heterogeneous technology stacks
+    </detail>
+    <detail>
+      Established CI/CD pipelines using Jenkins and GitHub Actions for automated data pipeline deployment, testing, and monitoring, reducing manual deployment time by 80%
+    </detail>
+  </experience>
+
+  <experience
+    business="Topl"
+    title="Blockchain Platform Engineer"
+  >
+    <start-date year="2021" month="3" />
+    <end-date year="2022" month="5" />
+    <detail>
+      Developed a distributed data processing system for blockchain transaction streaming using Scala and Akka actors, implementing fault-tolerant data storage for supply chain verification
+    </detail>
+    <detail>
+      Built a high-performance transaction indexing service using MongoDB with a Protobuf API, enabling real-time querying and streaming of blockchain data for downstream analytics applications
+    </detail>
+    <detail>
+      Architected a data integration layer between blockchain nodes and external systems, implementing TCP-based event messaging and state synchronization across the distributed network
+    </detail>
+    <detail>
+      Created a data visualization interface using React to demonstrate transaction streaming capabilities and provide insights into blockchain data patterns for business stakeholders
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="Software Engineer I &amp; II"
+  >
+    <start-date year="2019" month="9" />
+    <end-date year="2021" month="4" />
+    <detail>
+      Developed a comprehensive construction project management platform serving project managers, architects, and project leads with sophisticated workflows for tracking submittals, RFIs, issues, and change orders across multiple construction projects
+    </detail>
+    <detail>
+      Architected a cutting-edge event-sourced data system for change management with complete financial lineage tracking, storing all user interactions as immutable events with application state derived from event streams for complete audit trails and historical analysis
+    </detail>
+    <detail>
+      Built complex data integration pipelines connecting the construction management platform with the flagship enterprise resource management system, enabling real-time bidirectional synchronization of change orders, financial data, project metrics, and cross-entity referencing
+    </detail>
+    <detail>
+      Designed sophisticated data models and SQL queries handling construction-specific workflows including submittal approval chains, RFI tracking, issue resolution processes, and multi-tier change order approval workflows with automated status updates
+    </detail>
+    <detail>
+      Implemented full-stack data solutions spanning database modeling with MSSQL and Event Store, a microservices architecture deployed on Azure, REST API development, and responsive web interfaces for construction data visualization and management
+    </detail>
+    <detail>
+      Developed data analytics capabilities providing construction teams with insights into project performance, change order trends, submittal cycle times, and issue resolution metrics to support data-driven project management decisions
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="QA Automation Engineer"
+  >
+    <start-date year="2018" month="8" />
+    <end-date year="2019" month="8" />
+    <detail>
+      Architected a comprehensive test automation framework enabling data quality validation across a complex microservices architecture with automated API testing and data integrity checks
+    </detail>
+    <detail>
+      Implemented performance testing protocols for data-intensive operations including batch data processing, ensuring system scalability under high-volume concurrent data loads
+    </detail>
+    <detail>
+      Established quality assurance processes for data pipeline validation and comprehensive test case documentation, reducing data quality issues in production by 60%
+    </detail>
+  </experience>
+
+  <education
+    school="University of Portland"
+    degree="Bachelors of Science"
+  >
+    <start-date year="2015" month="8" />
+    <end-date year="2019" month="5" />
+    <detail>Computer Science Major</detail>
+    <detail>Mathematics Minor</detail>
+  </education>
+
+  <certification name="AWS Cloud Practitioner"/>
+
+  <skills group="Data Engineering &amp; Analytics">
+    <skill>SQL &amp; Database Design</skill>
+    <skill>Python Data Processing</skill>
+    <skill>ETL/ELT Pipeline Development</skill>
+    <skill>AWS Kinesis &amp; DynamoDB</skill>
+    <skill>Databricks &amp; Apache Spark</skill>
+    <skill>Data Lake Architecture (S3, Parquet)</skill>
+    <skill>Schema Registry Design</skill>
+    <skill>Real-time Stream Processing</skill>
+  </skills>
+
+  <skills group="Cloud &amp; Infrastructure">
+    <skill>AWS Services (Kinesis, S3, DynamoDB, IAM)</skill>
+    <skill>Azure Cloud Platform</skill>
+    <skill>Microservices Architecture</skill>
+    <skill>Event-driven Systems</skill>
+    <skill>CI/CD Pipelines (Jenkins, GitHub Actions)</skill>
+    <skill>Data Pipeline Monitoring &amp; Alerting</skill>
+  </skills>
+
+  <skills group="Programming &amp; Technologies">
+    <skill>Scala &amp; Functional Programming</skill>
+    <skill>Python &amp; Data Libraries</skill>
+    <skill>Java &amp; JVM Ecosystem</skill>
+    <skill>REST API &amp; GraphQL Development</skill>
+    <skill>Protobuf &amp; Data Serialization</skill>
+    <skill>Event Sourcing &amp; CQRS Patterns</skill>
+  </skills>
+
+</resume-content>

@@ -1,0 +1,40 @@
+Procore Senior Software Engineer
+https://careers.procore.com/jobs/6b09bd17-58cb-4e2a-8821-4944d2d4d633
+
+Job Description
+
+What if you could use your technology skills to develop a product that impacts the way communities’ hospitals, homes, sports stadiums, and schools across the world are built? Construction impacts the lives of nearly everyone in the world, and yet it’s also one of the world’s least digitized industries. That’s why we’re looking for a talented Senior Data Engineer to join Procore’s journey to revolutionize a historically underserved industry.
+
+As a Senior Data Engineer on Procore’s Construction team, you’ll design and develop predictive analytics data products. You’ll be part of the high-performance team of Data Engineers and contribute to designing, building, testing, scaling, and maintaining data pipelines from various source systems and streams (internal, third party, cloud-based, etc.), according to business and technical requirements.
+
+This position will report to our Manager of Data Engineering, and will be based in our Austin, TX office. We're looking for someone to join our team immediately.
+
+What you'll do:
+
+    Implement ETL/ELT workflows for data ingestion, data matching, data cleansing, data integration, and management
+
+     Maintain existing data pipelines and develop new data pipelines using modern data stack technologies
+
+    Architect, develop, and maintain data egress solutions such as APIs, GraphQL, or MCP
+
+    Develop and maintain tables and data models in SQL, abstracting multiple sources and historical data across varied schemas
+
+    Responsible for leading the effort of continuously improving reliability, scalability, and stability of the enterprise data platform
+
+    Contribute to and lead the continuous improvement of the software development framework and processes by collaborating with Quality Assurance engineers
+
+    Participate in daily stand ups, team meetings, sprint planning, and demo/retrospectives while working cross-functionality with other teams to drive the innovation of our products
+
+What we're looking for:
+
+    BS degree in Computer Science, Information Technology, Information Systems, Data Science / Data Analytics or a similar technical field of study, or equivalent practical experience.
+
+    4+ years of experience in a Data Engineering of Software Engineering position with focus on data ingestion and consumption
+
+    Strong expertise with 4+ years of experience building and maintaining data warehouses in support of engineering tools including SQL, python, Snowflake,DataBricks, Airflow, dbt, Tableau, FiveTran, Census, MWAA, AWS, APIs, GraphQL, Event Messaging
+
+    Experience in processing structured and unstructured data into a form suitable for analysis and reporting with integration with a variety of data metric providers ranging from advertising, web analytics, and consumer devices
+
+    Desire to be actively hands-on with code; using Python and SQL along with willingness and passion for mentoring junior engineers and performing code reviews
+
+    Develop data catalogs and data cleanliness to ensure clarity and correctness of key business metrics
