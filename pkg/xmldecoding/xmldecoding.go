@@ -4,45 +4,45 @@ Package xmldecoding provides functions for decoding XML files into Presume model
 package xmldecoding
 
 import (
-  "encoding/xml"
-  "fmt"
-  "os"
+	"encoding/xml"
+	"fmt"
+	"os"
 
-  "github.com/b-vennes/presume/pkg/models"
+	"github.com/b-vennes/presume/pkg/models"
 )
 
-type newDecoderError struct {}
+type newDecoderError struct{}
 
 func (e newDecoderError) Error() string {
-  return fmt.Sprintln("Failed to create XML file decoder.")
+	return fmt.Sprintln("Failed to create XML file decoder.")
 }
 
 func makeNewDecoderError() newDecoderError {
-  return newDecoderError {}
+	return newDecoderError{}
 }
 
 func Decode(filePath string) (*models.ResumeContentData, error) {
-  file, err := os.Open(filePath)
+	file, err := os.Open(filePath)
 
-  if err != nil {
-    return nil, err
-  }
+	if err != nil {
+		return nil, err
+	}
 
-  defer file.Close()
+	defer file.Close()
 
-  decoder := xml.NewDecoder(file)
+	decoder := xml.NewDecoder(file)
 
-  if decoder == nil {
-    err = makeNewDecoderError()
-    return nil, err
-  }
+	if decoder == nil {
+		err = makeNewDecoderError()
+		return nil, err
+	}
 
-  var result models.ResumeContentData
-  err = decoder.Decode(&result)
+	var result models.ResumeContentData
+	err = decoder.Decode(&result)
 
-  if err != nil {
-    return nil, err
-  }
+	if err != nil {
+		return nil, err
+	}
 
-  return &result, nil
+	return &result, nil
 }

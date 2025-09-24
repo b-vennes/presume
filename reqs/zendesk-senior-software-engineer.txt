@@ -1,0 +1,67 @@
+Zendesk Senior Software Engineer position
+https://zendesk.wd1.myworkdayjobs.com/en-US/zendesk/job/San-Francisco-California-United-States-of-America/Senior-Software-Engineer_R31620
+
+Job Description
+
+Senior Software Engineer, Email Infrastructure
+
+Location Requirement: This is a hybrid role. Candidates must reside within a commutable distance of one of our offices in San Francisco, CA; Austin, TX; or Madison, WI
+
+Zendesk's first and still most heavily used product is Zendesk Support. There are many channels offered when using Zendesk Support, and Email is by far the largest channel our customers use when interacting with our Support product. We process over 1 billion emails per month and have continuous growth! Our larger Email Engineering organization is looking to hire a Senior Software Engineer on our Infrastructure team.
+
+Our team builds and maintains our edge Mail Transfer Agent and related services alongside our three sibling Email Engineering teams to ensure we are aligned on business goals. You will join us at an exciting time where we are in the early stages of crafting and building our new Email Platform.
+
+In this role, you will help shape the future vision of the team, be responsible for keeping our current systems operational and accurate by proactively monitoring our dashboards for concerns around capacity or abuse. You will also contribute by writing and reviewing PRs on our codebase, remediating service issues, improving automations and deploy pipelines, and prioritizing customer raised tickets before they become larger problems.
+What you’ll be doing
+
+    Maintain the reliability and stability of our AWS-based Email infrastructure.  
+
+    Be a technical leader for the team to guide and deliver on our vision to turn our Email offering into a platform used by customers and all Zendesk products.
+
+    Work collaboratively with a team of experienced engineers and in cross-functional teams within Zendesk.
+
+    Deploy your code to production and improve the experience of millions of Zendesk users.
+
+    Work with a modern technology stack: AWS Services, Kubernetes, CloudFormation, Golang, and Ruby.
+
+What you bring to the role
+
+    4+ years of software engineering experience.
+
+    2+ years of experience in a DevOps or Infrastructure role in a large scale environment, preferably in SaaS.
+
+    2+ years of experience administering cloud systems, especially AWS
+
+    Expertise with observability tooling, preferably DataDog.
+
+    Extensive linux admin experience
+
+    A deep understanding of internet fundamentals: network protocols, DNS, HTTP, TLS/SSL, load balancing, network protocols.
+
+    Strong proficiency coding complex tools, preferably in Golang or Ruby
+
+    Excellent communication skills
+
+What would be nice to have:
+
+    Familiarity with SMTP protocol and standards: SPF/DKIM/DMARC.
+
+    Strong familiarity with Kubernetes/Docker and service mesh technologies
+
+    Experience with AWS services (or their open-sourced equivalents) like SQS, Lambda, CloudFormation, Elasticache, EC2, Route53
+
+Tech Stack
+
+    We write code mostly in Ruby, Golang, and BASH
+
+    We run our services with a mix of Kubernetes and EC2 all running in AWS.
+
+    Our services use Elasticache/Redis, MySQL (Aurora), Kafka, and other AWS services.
+
+The US annualized base salary range for this position is $145,000.00-$217,000.00. This position may also be eligible for bonus, benefits, or related incentives. While this range reflects the minimum and maximum value for new hire salaries for the position across all US locations, the offer for the successful candidate for this position will be based on job related capabilities, applicable experience, and other factors such as work location. Please note that the compensation details listed in US role postings reflect the base salary only (or OTE for commissions based roles), and do not include bonus, benefits, or related incentives.
+
+Hybrid: In this role, our hybrid experience is designed at the team level to give you a rich onsite experience packed with connection, collaboration, learning, and celebration - while also giving you flexibility to work remotely for part of the week. This role must attend our local office for part of the week. The specific in-office schedule is to be determined by the hiring manager.
+
+The intelligent heart of customer experience
+
+Zendesk software was built to bring a sense of calm to the chaotic world of customer service. Today we power billions of conversations with brands you know and love.

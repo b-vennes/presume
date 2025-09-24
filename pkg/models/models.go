@@ -8,223 +8,222 @@ import "fmt"
 type Month int
 
 const (
-  January Month = 1
-  February
-  March
-  April
-  May
-  June
-  July
-  August
-  September
-  October
-  November
-  December
+	January Month = 1
+	February
+	March
+	April
+	May
+	June
+	July
+	August
+	September
+	October
+	November
+	December
 )
 
 func (m Month) String() string {
-  switch m {
-    case 1: return "January"
-    case 2: return "February"
-    case 3: return "March"
-    case 4: return "April"
-    case 5: return "May"
-    case 6: return "June"
-    case 7: return "July"
-    case 8: return "August"
-    case 9: return "September"
-    case 10: return "October"
-    case 11: return "November"
-    case 12: return "December"
-  }
-  return ""
+	switch m {
+	case 1:
+		return "January"
+	case 2:
+		return "February"
+	case 3:
+		return "March"
+	case 4:
+		return "April"
+	case 5:
+		return "May"
+	case 6:
+		return "June"
+	case 7:
+		return "July"
+	case 8:
+		return "August"
+	case 9:
+		return "September"
+	case 10:
+		return "October"
+	case 11:
+		return "November"
+	case 12:
+		return "December"
+	}
+	return ""
 }
 
 type Date struct {
-  Year int `xml:"year,attr"`
-  Month Month `xml:"month,attr"`
+	Year  int   `xml:"year,attr"`
+	Month Month `xml:"month,attr"`
 }
 
 func DateZero() Date {
-  return Date {}
+	return Date{}
 }
 
 type ExperienceData struct {
-  Business string `xml:"business,attr"`
-  Title string `xml:"title,attr"`
-  StartDate Date `xml:"start-date"`
-  EndDate Date `xml:"end-date"`
-  Details []string `xml:"detail"`
+	Business  string   `xml:"business,attr"`
+	Title     string   `xml:"title,attr"`
+	StartDate Date     `xml:"start-date"`
+	EndDate   Date     `xml:"end-date"`
+	Details   []string `xml:"detail"`
 }
 
 type EducationData struct {
-  School string `xml:"school,attr"`
-  Degree string `xml:"degree,attr"`
-  Details []string `xml:"detail"`
-  StartDate Date `xml:"start-date"`
-  EndDate Date `xml:"end-date"`
+	School    string   `xml:"school,attr"`
+	Degree    string   `xml:"degree,attr"`
+	Details   []string `xml:"detail"`
+	StartDate Date     `xml:"start-date"`
+	EndDate   Date     `xml:"end-date"`
 }
 
 type CertificationData struct {
-  Name string `xml:"name,attr"`
+	Name string `xml:"name,attr"`
 }
 
 type HeaderData struct {
-  Name string `xml:"name,attr"`
-  Email string `xml:"email,attr"`
-  Github string `xml:"github,attr"`
-  Summary string `xml:"summary"`
+	Name    string `xml:"name,attr"`
+	Email   string `xml:"email,attr"`
+	Github  string `xml:"github,attr"`
+	Site    string `xml:"site,attr"`
+	Summary string `xml:"summary"`
 }
 
 type SkillsData struct {
-  Group string `xml:"group,attr"`
-  Skills []string `xml:"skill"`
+	Group  string   `xml:"group,attr"`
+	Skills []string `xml:"skill"`
 }
 
 type ResumeContentData struct {
-  Header HeaderData `xml:"header"`
-  Experience []ExperienceData `xml:"experience"`
-  Education []EducationData `xml:"education"`
-  Certifications []CertificationData `xml:"certification"`
-  Skills []SkillsData `xml:"skills"`
+	Header         HeaderData          `xml:"header"`
+	Experience     []ExperienceData    `xml:"experience"`
+	Education      []EducationData     `xml:"education"`
+	Certifications []CertificationData `xml:"certification"`
+	Skills         []SkillsData        `xml:"skills"`
 }
 
 type HeaderView struct {
-  Name string
-  Email string
-  Github string
-  Summary string
+	Name    string
+	Email   string
+	Github  string
+	Site    string
+	Summary string
 }
 
 func MakeHeaderView(data HeaderData) HeaderView {
-  return HeaderView {
-    Name: data.Name,
-    Email: data.Email,
-    Github: data.Github,
-    Summary: data.Summary,
-  }
+	return HeaderView{
+		Name:    data.Name,
+		Email:   data.Email,
+		Github:  data.Github,
+		Site:    data.Site,
+		Summary: data.Summary,
+	}
 }
 
 type ExperienceView struct {
-  Business string
-  Title string
-  StartDate string
-  EndDate string
-  Details []string
+	Business  string
+	Title     string
+	StartDate string
+	EndDate   string
+	Details   []string
 }
 
 func (d Date) String() string {
-  if d == DateZero() {
-    return "Present"
-  }
+	if d == DateZero() {
+		return "Present"
+	}
 
-  return fmt.Sprint(d.Month.String(), " ", d.Year)
+	return fmt.Sprint(d.Month.String(), " ", d.Year)
 }
 
 func MakeExperienceView(data ExperienceData) ExperienceView {
-  detailsView := []string{}
-  for _, detail := range data.Details {
-    detailsView = append(detailsView, detail)
-  }
-
-  return ExperienceView {
-    Business: data.Business,
-    Title: data.Title,
-    StartDate: data.StartDate.String(),
-    EndDate: data.EndDate.String(),
-    Details: detailsView,
-  }
+	return ExperienceView{
+		Business:  data.Business,
+		Title:     data.Title,
+		StartDate: data.StartDate.String(),
+		EndDate:   data.EndDate.String(),
+		Details:   data.Details,
+	}
 }
 
 type EducationView struct {
-  School string
-  Degree string
-  Details []string
-  StartDate string
-  EndDate string
+	School    string
+	Degree    string
+	Details   []string
+	StartDate string
+	EndDate   string
 }
 
 func MakeEducationView(data EducationData) EducationView {
-  detailsView := []string{}
-  for _, detail := range data.Details {
-    detailsView = append(detailsView, detail)
-  }
-
-  return EducationView {
-    School: data.School,
-    Degree: data.Degree,
-    Details: detailsView,
-    StartDate: data.StartDate.String(),
-    EndDate: data.EndDate.String(),
-  }
+	return EducationView{
+		School:    data.School,
+		Degree:    data.Degree,
+		Details:   data.Details,
+		StartDate: data.StartDate.String(),
+		EndDate:   data.EndDate.String(),
+	}
 }
 
 type CertificationView struct {
-  Name string
+	Name string
 }
 
 func MakeCertificationView(data CertificationData) CertificationView {
-  return CertificationView {
-    Name: data.Name,
-  }
+	return CertificationView{
+		Name: data.Name,
+	}
 }
 
 type SkillsView struct {
-  Group string
-  Skills []string
+	Group  string
+	Skills []string
 }
 
 func MakeSkillsView(data SkillsData) SkillsView {
-  skillsView := []string{}
-
-  for _, s := range data.Skills {
-    skillsView = append(skillsView, s)
-  }
-
-  return SkillsView {
-    Group: data.Group,
-    Skills: skillsView,
-  }
+	return SkillsView{
+		Group:  data.Group,
+		Skills: data.Skills,
+	}
 }
 
 type ResumeContentView struct {
-  Header HeaderView
-  Experience []ExperienceView
-  Education []EducationView
-  Certifications []CertificationView
-  Skills []SkillsView
+	Header         HeaderView
+	Experience     []ExperienceView
+	Education      []EducationView
+	Certifications []CertificationView
+	Skills         []SkillsView
 }
 
 func MakeResumeContentView(data ResumeContentData) ResumeContentView {
-  experienceView := []ExperienceView{}
-  for _, e := range data.Experience {
-    eView := MakeExperienceView(e)
-    experienceView = append(experienceView, eView)
-  }
+	experienceView := []ExperienceView{}
+	for _, e := range data.Experience {
+		eView := MakeExperienceView(e)
+		experienceView = append(experienceView, eView)
+	}
 
-  educationView := []EducationView{}
-  for _, e := range data.Education {
-    eView := MakeEducationView(e)
-    educationView = append(educationView, eView)
-  }
+	educationView := []EducationView{}
+	for _, e := range data.Education {
+		eView := MakeEducationView(e)
+		educationView = append(educationView, eView)
+	}
 
-  certificationsView := []CertificationView{}
-  for _, c := range data.Certifications {
-    cView := MakeCertificationView(c)
-    certificationsView = append(certificationsView, cView)
-  }
+	certificationsView := []CertificationView{}
+	for _, c := range data.Certifications {
+		cView := MakeCertificationView(c)
+		certificationsView = append(certificationsView, cView)
+	}
 
-  skillsView := []SkillsView{}
-  for _, s := range data.Skills {
-    sView := MakeSkillsView(s)
-    skillsView = append(skillsView, sView)
-  }
+	skillsView := []SkillsView{}
+	for _, s := range data.Skills {
+		sView := MakeSkillsView(s)
+		skillsView = append(skillsView, sView)
+	}
 
-  return ResumeContentView {
-    Header: MakeHeaderView(data.Header),
-    Experience: experienceView,
-    Education: educationView,
-    Certifications: certificationsView,
-    Skills: skillsView,
-  }
+	return ResumeContentView{
+		Header:         MakeHeaderView(data.Header),
+		Experience:     experienceView,
+		Education:      educationView,
+		Certifications: certificationsView,
+		Skills:         skillsView,
+	}
 }

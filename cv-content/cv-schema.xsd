@@ -57,6 +57,10 @@
       name="github"
       type="xs:string"
     />
+    <xs:attribute
+      name="site"
+      type="xs:string"
+    />
   </xs:complexType>
 
   <xs:complexType
