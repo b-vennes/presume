@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Branden Vennes - Software Engineer Resume for Apple
+  Tailored for Apple's tech stack including Java, Spring, cloud technologies, and full-stack development
+-->
+<resume-content
+  xmlns="https://github.com/b-vennes/presume"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://github.com/b-vennes/presume cv-schema.xsd"
+>
+
+  <header
+    name="Branden Vennes"
+    email="b.n.vennes@gmail.com"
+    github="b-vennes"
+  >
+    <summary>
+      Experienced Software Engineer with 6+ years building scalable, cloud-native applications and distributed systems. Proven expertise in Java, Python, AWS, and event-driven architectures. Successfully delivered high-impact projects serving millions of users at Disney, with a strong background in schema management, data processing, and full-stack development.
+    </summary>
+  </header>
+
+  <experience
+    business="The Walt Disney Company"
+    title="Software Engineer II"
+  >
+    <start-date year="2022" month="6" />
+    <end-date year="2025" month="8" />
+
+    <detail>
+      Architected and maintained the Schema Registry platform serving 50+ engineering teams using Java, AWS Smithy, and AWS Kinesis
+    </detail>
+    <detail>
+      Built a stream snapshotting distributed system enabling real-time state management for high-volume streaming data, processing millions of events daily for Disney+ and Hulu content metadata
+    </detail>
+    <detail>
+      Built schema validation systems and compatibility checking tools, integrating with AWS Kinesis for streaming data pipelines
+    </detail>
+    <detail>
+      Built data pipelines using Databricks, Apache Spark, and AWS S3 to process streaming data into Disney's data lake, enabling executive dashboard creation and business intelligence reporting across the organization
+    </detail>
+    <detail>
+      Implemented multi-language artifact generation (Scala, Java, Python) with custom serialization logic, Protobuf integration, and AWS client SDK integration
+    </detail>
+    <detail>
+      Collaborated with cross-functional teams to deliver event-driven solutions supporting Disney's streaming platform infrastructure
+    </detail>
+  </experience>
+
+  <experience
+    business="Topl"
+    title="Blockchain Platform Engineer"
+  >
+    <start-date year="2021" month="3" />
+    <end-date year="2022" month="5" />
+    <detail>
+      Developed a proof-of-stake blockchain platform using Scala and Akka actors, implementing distributed consensus algorithms and peer-to-peer networking protocols
+    </detail>
+    <detail>
+      Built a transaction streaming service with Protobuf APIs using http4s, Cats Effect, and MongoDB for real-time blockchain data indexing and querying
+    </detail>
+    <detail>
+      Designed and implemented RESTful management APIs for node configuration, key management, and transaction processing
+    </detail>
+    <detail>
+      Established an end-to-end test suite using Postman with CI/CD integration, providing development teams with API test coverage and end-users with API examples
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="Software Engineer I &amp; II"
+  >
+    <start-date year="2019" month="9" />
+    <end-date year="2021" month="4" />
+    <detail>
+      Developed full-stack web applications using C#/.NET, Azure cloud services, and Microsoft SQL Server for the construction project management platform
+    </detail>
+    <detail>
+      Implemented an Event Sourcing architecture for the Change Management workflow, providing a highly-scalable solution for a complex business domain with multiple data sources
+    </detail>
+    <detail>
+      Built RESTful APIs and microservices integrated with enterprise systems, serving thousands of construction teams
+    </detail>
+    <detail>
+      Enhanced application performance and user experience through database optimization and responsive UI development
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="QA Automation Engineer"
+  >
+    <start-date year="2018" month="8" />
+    <end-date year="2019" month="8" />
+    <detail>
+      Designed and implemented an automated testing framework using C# and Selenium, reducing manual testing effort by 75%
+    </detail>
+    <detail>
+      Developed an API testing suite for microservices validation and implemented performance testing coverage providing consistent feedback to development teams
+    </detail>
+    <detail>
+      Created maintainable test automation solutions enabling non-technical team members to write and execute comprehensive test suites
+    </detail>
+  </experience>
+
+  <education
+    school="University of Portland"
+    degree="Bachelors of Science"
+  >
+    <start-date year="2015" month="8" />
+    <end-date year="2019" month="5" />
+    <detail>Computer Science Major</detail>
+    <detail>Mathematics Minor</detail>
+  </education>
+
+  <certification name="AWS Cloud Practitioner"/>
+
+  <skills group="Development">
+    <skill>Java</skill>
+    <skill>Scala</skill>
+    <skill>Python</skill>
+    <skill>C#/.NET</skill>
+    <skill>JavaScript &amp; TypeScript</skill>
+    <skill>AWS Smithy</skill>
+    <skill>AWS SDKs (Kinesis, DynamoDB, S3)</skill>
+    <skill>RESTful APIs</skill>
+  </skills>
+
+  <skills group="Data &amp; Streaming">
+    <skill>Event-Driven Architecture</skill>
+    <skill>Apache Kafka</skill>
+    <skill>Apache Spark</skill>
+    <skill>Databricks</skill>
+    <skill>Protobuf</skill>
+    <skill>PostgreSQL</skill>
+    <skill>MongoDB</skill>
+    <skill>DynamoDB</skill>
+  </skills>
+
+  <skills group="DevOps">
+    <skill>Git/GitHub</skill>
+    <skill>CI/CD Pipelines</skill>
+    <skill>Jenkins</skill>
+    <skill>Automated Testing</skill>
+    <skill>Kubernetes</skill>
+    <skill>Docker</skill>
+    <skill>Microservices</skill>
+  </skills>
+
+</resume-content>

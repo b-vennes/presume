@@ -1,0 +1,21 @@
+Title - Senior Scala Software Engineer
+Location -Remote or DC or NY
+Type of hire - Full Time
+
+Job Description
+
+Must Have Technical/Functional Skills
+• Minimum 10 years + working exp as Scala Developer
+• Minimum 6+ years + working exp in AWS, Docker
+• Minimum 10+ years + working exp in development
+
+Roles & Responsibilities
+• 10+ years of experience in Scala backend development.
+• Proficient in Scala, both object oriented and functional programming concepts, and the JVM ecosystem.
+• Deep understanding and application of advanced functional programming concepts like category theory, monads, applicatives, and type classes.
+• Hands-On knowledge with Scala Typelevel libraries like Cats, Shapeless, and others used for building applications with strong typing and efficient concurrency.
+• Proficiency in AWS services, especially for deploying and managing backend systems.
+• Strong experience in designing and consuming REST APIs.
+• Clear understanding of microservices architecture, multithreading, and asynchronous processing.
+• Hands on experience with Docker containerization
+• Strong problem-solving skills, debugging, and troubleshooting experience.

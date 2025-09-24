@@ -1,0 +1,38 @@
+webAI Software Engineer - Runtime
+https://jobs.ashbyhq.com/webAI/1bf79325-38cf-4aa3-9d5d-5a35654b7b70
+
+About Us: We are establishing the first distributed AI infrastructure dedicated to personalized AI. The evolving needs of a data-driven society are demanding scalability and flexibility. We believe that the future of AI is distributed and enables real-time data processing at the edge, closer to where data is generated. We are building a future where a company's data and IP remains private and it's possible to bring large models directly to consumer hardware without removing information from the model.
+
+About the Role: As a Software Engineer on the Runtime team, you will contribute to designing, building, and optimizing the core systems that power our services. You'll work on high-performance runtime components, helping ensure they are scalable, reliable, and efficient under heavy workloads. Working closely with senior engineers and cross-functional partners, you will help build our runtime platform and contribute to delivering a seamless experience for end users.
+
+Key Responsibilities:
+
+    Implement and maintain systems for both local air-gapped systems as well as customer distributed deployments
+
+    Contribute to new features through robust backwards compatible updates that impact all of webAI's customers and products
+
+    Learn and contribute to our evolving knowledge base, architecture, processes and systems, bringing fresh perspectives while learning from experienced team members
+
+    Support critical systems that directly influence the company's ability to deliver AI-powered products and services
+
+Qualifications:
+
+    Bachelor's degree in Computer Science, Engineering, or a related field, or equivalent work experience
+
+    2+ years of experience in backend engineering, or recent graduate with strong internship/project experience
+
+    Proficiency in Go or strong willingness to learn Go quickly
+
+    Exposure to or interest in messaging systems such as MQTT, Kafka, Nats
+
+    Basic understanding of deployment pipelines and CI/CD processes, with eagerness to learn custom deployment strategies
+
+We at webAI are committed to living out the core values we have put in place as the foundation on which we operate as a team. We seek individuals who exemplify the following:
+
+    Truth - Emphasizing transparency and honesty in every interaction and decision.
+
+    Ownership - Taking full responsibility for one’s actions and decisions, demonstrating commitment to the success of our clients.
+
+    Tenacity - Persisting in the face of challenges and setbacks, continually striving for excellence and improvement.
+
+    Humility - Maintaining a respectful and learning-oriented mindset, acknowledging the strengths and contributions of others.

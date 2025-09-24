@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Tailored CV for Branden Vennes - Sr. Cloud Engineer Position at Ollion
+-->
+<resume-content
+  xmlns="https://github.com/b-vennes/presume"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://github.com/b-vennes/presume cv-schema.xsd"
+>
+
+  <header
+    name="Branden Vennes"
+    email="b.n.vennes@gmail.com"
+    github="b-vennes"
+  >
+    <summary>
+      Senior Cloud Engineer with 6+ years developing scalable cloud infrastructure, data platforms, and distributed systems. Proven expertise in AWS services (Kinesis, DynamoDB, S3, IAM), Infrastructure-as-Code, CI/CD pipelines, and container orchestration. Strong background in microservices architecture, event-driven systems, and multi-cloud environments. AWS Cloud Practitioner certified with hands-on experience in cloud security and operational excellence.
+    </summary>
+  </header>
+
+  <experience
+    business="The Walt Disney Company"
+    title="Software Engineer II"
+  >
+    <start-date year="2022" month="6" />
+    <end-date year="2025" month="8"/>
+
+    <detail>
+      Engineered streaming data platform solutions managing AWS infrastructure for Disney+ and Hulu, supporting large-scale content metadata, financial, and telemetry systems
+    </detail>
+    <detail>
+      Architected and implemented cloud-native stream processing solutions using AWS Kinesis, DynamoDB, and S3 with automated scaling and monitoring
+    </detail>
+    <detail>
+      Built Infrastructure-as-Code solutions using Terraform and CloudFormation for AWS service provisioning and automated deployment pipelines, reducing manual configuration by 90%
+    </detail>
+    <detail>
+      Developed comprehensive CI/CD pipelines using Jenkins and GitHub Actions for schema registry validation, compatibility checking, semantic versioning, and multi-language artifact deployment (Scala, Java, Python, Protobuf) across cloud environments
+    </detail>
+    <detail>
+      Implemented Databricks cloud integration with Spark jobs, S3 data lakes, and Deltalake format for enterprise analytics dashboards
+    </detail>
+    <detail>
+      Maintained 99.9% uptime across distributed cloud infrastructure serving millions of users with proactive monitoring and alerting
+    </detail>
+  </experience>
+
+  <experience
+    business="Topl"
+    title="Blockchain Platform Engineer"
+  >
+    <start-date year="2021" month="3" />
+    <end-date year="2022" month="5" />
+    <detail>
+      Designed and deployed cloud-native blockchain platform infrastructure for supply chain verification with a distributed node architecture
+    </detail>
+    <detail>
+      Built containerized microservices using Docker with automated deployment pipelines and container orchestration for multi-region availability
+    </detail>
+    <detail>
+      Implemented a cloud-based transaction streaming service using MongoDB Atlas, with Protobuf APIs and real-time monitoring dashboards
+    </detail>
+    <detail>
+      Developed Infrastructure-as-Code templates for rapid environment provisioning and configuration management across development and production environments
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="Software Engineer I &amp; II"
+  >
+    <start-date year="2019" month="9" />
+    <end-date year="2021" month="4" />
+    <detail>
+      Developed an Azure-hosted construction management platform with microservices architecture and Event Sourcing patterns
+    </detail>
+    <detail>
+      Built and maintained Azure cloud infrastructure including App Services, SQL databases, and Event Store with automated scaling and backup strategies
+    </detail>
+    <detail>
+      Implemented CI/CD pipelines for .NET microservices with automated testing, security scanning, and multi-environment deployments through development, QA, staging, and production environments
+    </detail>
+    <detail>
+      Designed a cloud-native change management system with an event-driven architecture and real-time synchronization across distributed services
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="QA Automation Engineer"
+  >
+    <start-date year="2018" month="8" />
+    <end-date year="2019" month="8" />
+    <detail>
+      Built a comprehensive cloud-based test automation framework with Selenium for cross-browser testing and API validation
+    </detail>
+    <detail>
+      Implemented performance testing suites for cloud applications with load balancing and auto-scaling validation
+    </detail>
+    <detail>
+      Developed automated monitoring and alerting systems for application performance and infrastructure health metrics
+    </detail>
+  </experience>
+
+  <education
+    school="University of Portland"
+    degree="Bachelor of Science - Computer Science"
+  >
+    <start-date year="2015" month="8" />
+    <end-date year="2019" month="5" />
+    <detail>Computer Science Major</detail>
+    <detail>Mathematics Minor</detail>
+  </education>
+
+  <certification name="AWS Cloud Practitioner"/>
+
+  <skills group="Cloud &amp; Infrastructure">
+    <skill>Amazon Web Services (AWS)</skill>
+    <skill>Terraform</skill>
+    <skill>Docker</skill>
+    <skill>Kubernetes</skill>
+  </skills>
+
+  <skills group="Development &amp; DevOps">
+    <skill>Python</skill>
+    <skill>Jenkins</skill>
+    <skill>GitHub Actions</skill>
+    <skill>CI/CD Pipelines</skill>
+  </skills>
+
+  <skills group="Data &amp; Monitoring">
+    <skill>DynamoDB</skill>
+    <skill>CloudWatch</skill>
+    <skill>Event Sourcing</skill>
+    <skill>Stream Processing</skill>
+  </skills>
+
+</resume-content>

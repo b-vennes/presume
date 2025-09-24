@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  CV tailored for TATA Consultancy Services Senior Scala Software Engineer role.
+  Focus on Scala functional programming, AWS, microservices, and backend development.
+-->
+<resume-content
+  xmlns="https://github.com/b-vennes/presume"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://github.com/b-vennes/presume cv-schema.xsd"
+>
+
+  <header
+    name="Branden Vennes"
+    email="b.n.vennes@gmail.com"
+    github="b-vennes"
+  >
+    <summary>
+      Senior Scala software engineer with 6+ years of experience specializing in functional programming and distributed systems architecture. Proven expertise building scalable streaming data platforms, event-driven microservices, and high-performance backend systems using advanced functional programming concepts including monads, type classes, and category theory. Strong AWS cloud experience with Docker containerization and enterprise-scale system design serving millions of users.
+    </summary>
+  </header>
+
+  <experience
+    business="The Walt Disney Company"
+    title="Software Engineer II"
+  >
+    <start-date year="2022" month="6" />
+    <end-date year="2025" month="8" />
+
+    <detail>
+      Architected and maintained a critical Scala-based streaming data platform serving 50+ engineering teams across Disney+ and Hulu, processing millions of real-time events through AWS Kinesis streams with advanced functional programming patterns and zero-downtime requirements
+    </detail>
+    <detail>
+      Built a comprehensive stream-snapshot state management system in Scala for aggregating large data streams, integrated into the Disney+ content metadata unification project processing millions of entertainment entities
+    </detail>
+    <detail>
+      Developed robust schema registry tools supporting backwards-compatible evolution using AWS Smithy and Scala functional validation pipelines, ensuring safe deployments across distributed services with complex type safety guarantees and semantic versioning
+    </detail>
+    <detail>
+      Implemented a multi-language artifact generation pipeline using the Scala Cats library, supporting Scala, Java, Python, and Protobuf with automated JSON serialization using Circe, functional composition patterns, and Scala equality type-classes
+    </detail>
+    <detail>
+      Designed sophisticated REST APIs using http4s and Cats Effect with Docker containerization for AWS deployment, implementing asynchronous processing and functional error handling for a production microservices architecture
+    </detail>
+    <detail>
+      Engineered real-time data-lake integrations using Spark and Scala for analytics workflows, implementing functional reactive programming principles for streaming data processing and transformation pipelines
+    </detail>
+  </experience>
+
+  <experience
+    business="Topl"
+    title="Blockchain Platform Engineer"
+  >
+    <start-date year="2021" month="3" />
+    <end-date year="2022" month="5" />
+
+    <detail>
+      Developed core runtime components for a proof-of-stake blockchain platform using Scala and Akka actors, implementing distributed consensus algorithms with functional state management and peer-to-peer networking protocols for supply chain verification
+    </detail>
+    <detail>
+      Built a comprehensive HTTP management API using Akka HTTP for secure cryptographic key rotation, transaction signing, and node configuration
+    </detail>
+    <detail>
+      Created a high-performance transaction streaming service using Scala http4s, Cats Effect, and MongoDB with functional asynchronous processing, implementing a Protobuf API enabling real-time blockchain data querying with immutable data structures
+    </detail>
+    <detail>
+      Developed end-to-end API tests using Postman collections to validate builds in the CI/CD process and provide example documentation to end-users
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="Software Engineer I &amp; II"
+  >
+    <start-date year="2019" month="9" />
+    <end-date year="2021" month="4" />
+
+    <detail>
+      Developed full-stack solutions for a construction project management platform serving thousands of users, implementing event-sourced change management architecture with functional programming principles for immutable state transitions and complex organizational workflows
+    </detail>
+    <detail>
+      Architected a cutting-edge event-sourced change management interface with complete audit trails, storing all user interactions as immutable events with functional state derivation patterns
+    </detail>
+    <detail>
+      Built a sophisticated change order tracking system with financial lineage features and cross-entity referencing, integrated with the company's flagship enterprise resource management application using Kafka message channels
+    </detail>
+    <detail>
+      Implemented a microservices architecture using C# deployed on Azure cloud infrastructure with MSSQL and Event Store databases, spanning database modeling, REST APIs, and responsive web UI components with functional composition principles
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="QA Automation Engineer"
+  >
+    <start-date year="2018" month="8" />
+    <end-date year="2019" month="8" />
+
+    <detail>
+      Designed comprehensive test automation framework enabling non-technical team members to define and execute complex test scenarios using functional composition patterns and simple C# interfaces
+    </detail>
+    <detail>
+      Built an API testing framework for microservices validation and Selenium-based UI testing framework for headless and browser-based test execution with property-based testing principles
+    </detail>
+    <detail>
+      Conducted performance testing and load testing analysis including bulk operations to ensure system scalability and responsiveness under high concurrent user loads, establishing quality assurance processes for production systems
+    </detail>
+  </experience>
+
+  <education
+    school="University of Portland"
+    degree="Bachelors of Science"
+  >
+    <start-date year="2015" month="8" />
+    <end-date year="2019" month="5" />
+    <detail>Computer Science Major</detail>
+    <detail>Mathematics Minor</detail>
+  </education>
+
+  <certification name="AWS Cloud Practitioner"/>
+
+  <skills group="Scala &amp; Functional Programming">
+    <skill>Scala</skill>
+    <skill>Cats &amp; Cats Effect</skill>
+    <skill>http4s</skill>
+    <skill>Akka</skill>
+    <skill>Typelevel Ecosystem</skill>
+    <skill>Functional Reactive Programming</skill>
+  </skills>
+
+  <skills group="Backend &amp; Cloud Infrastructure">
+    <skill>AWS (Kinesis, DynamoDB, S3, IAM)</skill>
+    <skill>Docker &amp; Containerization</skill>
+    <skill>Microservices Architecture</skill>
+    <skill>REST API Design</skill>
+    <skill>Distributed Systems</skill>
+    <skill>Event-driven Architecture</skill>
+  </skills>
+
+  <skills group="Data &amp; JVM Ecosystem">
+    <skill>Event Sourcing &amp; CQRS</skill>
+    <skill>Schema Registry Design</skill>
+    <skill>Protobuf Serialization</skill>
+    <skill>MongoDB &amp; Event Store</skill>
+    <skill>SBT, Mill, Gradle, &amp; Maven</skill>
+    <skill>Multithreading &amp; Concurrency</skill>
+  </skills>
+
+</resume-content>
