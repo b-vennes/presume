@@ -1,0 +1,38 @@
+Easy Games Senior Software Engineer
+https://easy-games.rippling-ats.com/job/676624/senior-software-engineer
+
+About Us
+
+Easy Games is an independent game studio building high scale multiplayer games. We are a small team with a massive audience of over 20M monthly users with peaks of over 350k concurrent players.
+
+The Role
+
+Our Platform Services team is looking for engineers to help us build services and infrastructure for a new unannounced project, as well as our two live games, BedWars and Islands.
+
+You will be joining a small team of engineers working on interesting problems in the game development space such as:
+
+    Server Orchestration
+    Matchmaking
+    Database Services
+    Inventory and Game Economy
+
+You will be responsible for owning the design, development, and operation of services supporting millions of players every day. You will work closely with game developers and the platform team to build both user facing and internal services with a high level of autonomy.
+
+Technologies
+
+An exceptional candidate will have significant experience with many or all of the following:
+
+    NodeJS + NestJS/TypeScript
+    Document and Relational Databases
+    Event Driven Architectures
+    GCP/Cloud Services
+    Kubernetes
+
+The Fit
+
+We are looking for the following:
+
+    6+ years of software engineering experience
+    4+ years of experience working on complex backend systems
+    Capable individual contributor
+    Experience with high scale systems, preferably related to game backends

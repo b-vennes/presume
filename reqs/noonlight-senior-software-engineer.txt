@@ -1,0 +1,49 @@
+Noonlight Senior Software Engineer position
+https://job-boards.greenhouse.io/noonlight/jobs/8098916002
+
+At Noonlight, an Alarm.com company, our mission is to protect and comfort people so they can live freely. What began as an app focused on helping people walk safely from point A to point B, is now a suite of emergency response APIs backing some of the smartest home, health, lifestyle, and commercial security products in the market.
+
+We are looking for an experienced full-stack engineer to leverage their expertise to enrich our B2B product experiences. As a Sr. Software Engineer, you will be responsible for building new features, maintaining the code base, and identifying areas for improvement in our life-saving APIs and web applications.
+
+What Excites You:
+
+    Taking ownership of products and features
+    Coming up with new ways to leverage technology to keep people safe
+    Disrupting the expensive and outdated professional monitoring industry
+    Saving people, pets, and property in real life emergencies
+
+What Excites Us:
+
+    Willingness to test, learn, and improve in quick cycles
+    Passion for helping people
+    Strong sense of ownership, work ethic and self-motivation
+    Exceptional problem solving/analytical skills
+    Experience leading engineering projects from start to finish, including working with product managers and design to proactively identify potential barriers
+
+What can you do for Noonlight?
+
+    Develop and maintain high-quality public and internal REST APIs using Node.js, Express/Fastify, MongoDB, and API gateways in a microservice architecture
+    Develop and maintain high-quality web applications used by 24/7 dispatchers to respond to emergencies in React.js
+    Use AI-powered coding tools (e.g. GitHub Copilot, ChatGPT) to improve development efficiency and code quality
+    Remain current on new technologies and available vendor packages; evaluate and make recommendations as necessary
+    Maintain an up-to-date application architecture
+    Be a collaborator; work with product, architecture, and leadership to ensure good decisions are being made
+    Engage in the research, evaluation, and application of new technologies and methodologies to solve challenging project goals
+    Bring your ideas! We want our engineers to collaborate on product development, not blindly build to a spec
+    Other duties as assigned
+
+Requirements:
+
+    Bachelor’s in Computer Science, Computer Engineering, a related field or equivalent work experience
+    5+ years of professional software development experience
+    Experience leading and mentoring other engineers
+    Strong JavaScript programming skills in front-end and back-end development
+    Experience leveraging AI-assisted coding tools for faster, higher-quality software development
+    Experience with database design and development
+
+Nice-to-haves:
+
+    Experience working with high-availability, high-throughput services
+    Experience with external facing APIs and/or third-party platform integrations
+    Experience with JavaScript development using an established JS framework, such as React.js
+    Experience in IoT, smart home, security monitoring, or safety-related industries

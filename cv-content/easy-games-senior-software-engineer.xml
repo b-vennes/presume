@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Easy Games Senior Software Engineer Resume - Branden Vennes
+  Tailored for multiplayer game backend services, platform infrastructure, and high-scale systems
+-->
+<resume-content
+  xmlns="https://github.com/b-vennes/presume"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://github.com/b-vennes/presume cv-schema.xsd"
+>
+
+  <header
+    name="Branden Vennes"
+    email="b.n.vennes@gmail.com"
+    github="b-vennes"
+    site="www.brandenvennes.com"
+  >
+    <summary>
+      Backend software engineer with 6+ years building high-scale distributed systems and real-time services supporting millions of concurrent users. Proven expertise designing event-driven architectures, state management systems, and platform services processing billions of events daily. Strong background in microservices infrastructure, database design, and cloud orchestration. Passionate about building robust backend systems that power exceptional user experiences at massive scale.
+    </summary>
+  </header>
+
+  <experience
+    business="The Walt Disney Company"
+    title="Software Engineer II"
+  >
+    <start-date year="2022" month="6" />
+    <end-date year="2025" month="8" />
+
+    <detail>
+      Architected and maintained a critical streaming data platform serving 50+ engineering teams across Disney+ and Hulu, processing billions of real-time events through AWS Kinesis with sub-second latency and zero-downtime requirements
+    </detail>
+    <detail>
+      Designed and built a distributed stream-snapshot state management system enabling teams to maintain application state from event streams, successfully powering Disney+ content metadata services processing millions of entertainment entities with high availability guarantees
+    </detail>
+    <detail>
+      Developed a robust schema registry supporting backwards-compatible evolution and automated validation pipelines, ensuring safe deployments across distributed services while maintaining strict compatibility guarantees for producer-consumer relationships
+    </detail>
+    <detail>
+      Engineered multi-language artifact generation pipelines supporting Scala, Java, Python, and Protobuf with automated JSON serialization, enabling teams across multiple technology stacks to leverage platform services with type-safe integrations
+    </detail>
+    <detail>
+      Built real-time data processing pipelines using Spark and Databricks for analytics workflows, processing terabytes of streaming event data daily with optimized Parquet encoding and efficient S3 storage strategies
+    </detail>
+    <detail>
+      Collaborated closely with platform teams to design service APIs and internal tools enabling engineering teams to build features with high autonomy while maintaining system reliability and observability standards
+    </detail>
+    <detail>
+      Owned complete lifecycle of platform services from initial design through production deployment, monitoring, and iterative improvement based on operational metrics and team feedback
+    </detail>
+  </experience>
+
+  <experience
+    business="Topl"
+    title="Blockchain Platform Engineer"
+  >
+    <start-date year="2021" month="3" />
+    <end-date year="2022" month="5" />
+    <detail>
+      Developed core runtime components for a distributed proof-of-stake blockchain platform using Scala and Akka actors, implementing consensus algorithms and peer-to-peer networking protocols handling thousands of concurrent node connections
+    </detail>
+    <detail>
+      Built a fault-tolerant distributed node network with TCP communication and a comprehensive HTTP management API, enabling secure operations for transaction signing, key rotation, and node configuration at scale
+    </detail>
+    <detail>
+      Architected a high-performance transaction streaming service using http4s and Cats Effect with MongoDB for efficient indexing, providing real-time transaction querying capabilities with sub-second latency through Protobuf APIs
+    </detail>
+    <detail>
+      Designed state management systems for blockchain data, implementing efficient strategies for handling large transaction volumes while maintaining data consistency across distributed nodes
+    </detail>
+    <detail>
+      Created a React user interface for transaction monitoring and blockchain data visualization, demonstrating integration patterns for real-time data streaming to frontend applications
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="Software Engineer I &amp; II"
+  >
+    <start-date year="2019" month="9" />
+    <end-date year="2021" month="4" />
+    <detail>
+      Architected a cutting-edge event-sourced change management system storing all user interactions as immutable events with state derived from event streams, enabling complete audit trails and reliable state reconstruction at any point in time
+    </detail>
+    <detail>
+      Developed full-stack solutions for a construction project management platform serving thousands of concurrent users with complex organizational workflows including submittals, RFIs, issues, and financial change order tracking
+    </detail>
+    <detail>
+      Built a sophisticated change order system with financial lineage features and cross-entity referencing capabilities, integrated with the company's flagship enterprise resource management application through Kafka streams
+    </detail>
+    <detail>
+      Implemented a microservices architecture using C# deployed on Azure cloud infrastructure with MSSQL and Event Store databases, designing services that scaled horizontally to handle increasing user load
+    </detail>
+    <detail>
+      Designed database schemas optimized for high-throughput read and write operations, implementing indexing strategies and query optimizations that reduced API response times by 60%
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="QA Automation Engineer"
+  >
+    <start-date year="2018" month="8" />
+    <end-date year="2019" month="8" />
+    <detail>
+      Built a comprehensive test automation framework enabling efficient validation of microservices APIs and complex user workflows, significantly improving development velocity and deployment confidence
+    </detail>
+    <detail>
+      Conducted extensive performance and load testing including bulk operations and concurrent user simulations, validating system scalability and identifying bottlenecks before production deployment
+    </detail>
+    <detail>
+      Developed Selenium-based UI testing infrastructure with headless execution capabilities, creating automated regression test suites that caught critical bugs before user-facing releases
+    </detail>
+  </experience>
+
+  <education
+    school="University of Portland"
+    degree="Bachelor of Science"
+  >
+    <start-date year="2015" month="8" />
+    <end-date year="2019" month="5" />
+    <detail>Computer Science Major</detail>
+    <detail>Mathematics Minor</detail>
+  </education>
+
+  <certification name="AWS Cloud Practitioner"/>
+
+  <skills group="Backend Development &amp; Languages">
+    <skill>Scala, Java, Python, C#</skill>
+    <skill>Event-Driven Architecture</skill>
+    <skill>Microservices Design</skill>
+    <skill>REST API Development</skill>
+    <skill>High-Scale System Design</skill>
+  </skills>
+
+  <skills group="Databases &amp; Infrastructure">
+    <skill>MongoDB, PostgreSQL, DynamoDB</skill>
+    <skill>AWS Cloud Services (Kinesis, S3, IAM)</skill>
+    <skill>Real-time Data Streaming</skill>
+    <skill>Database Optimization</skill>
+    <skill>Event Sourcing</skill>
+  </skills>
+
+  <skills group="Platform &amp; DevOps">
+    <skill>Distributed Systems</skill>
+    <skill>State Management</skill>
+    <skill>CI/CD Pipelines</skill>
+    <skill>Performance Testing</skill>
+    <skill>System Monitoring &amp; Observability</skill>
+  </skills>
+
+</resume-content>
