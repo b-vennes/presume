@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Resume for Branden Vennes - Deepgram Backend Engineer Position
+  Tailored to emphasize backend systems, data pipelines, and developer platform experience
+-->
+<resume-content
+  xmlns="https://github.com/b-vennes/presume"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://github.com/b-vennes/presume cv-schema.xsd"
+>
+
+  <header
+    name="Branden Vennes"
+    email="b.n.vennes@gmail.com"
+    github="b-vennes"
+    site="www.brandenvennes.com"
+  >
+    <summary>
+      Backend engineer with 6+ years building scalable distributed systems, data pipelines, and developer platforms. AWS certified with expertise in event-driven architectures, real-time data processing, and CI/CD automation across entertainment, blockchain, and enterprise software.
+    </summary>
+  </header>
+
+  <experience
+    business="The Walt Disney Company"
+    title="Software Engineer II"
+  >
+    <start-date year="2022" month="6" />
+    <end-date year="2025" month="8" />
+
+    <detail>
+      Built an internal developer platform serving 50+ teams with a schema registry, multi-language code generation (Scala, Java, Python, Protobuf), and automated artifact publishing
+    </detail>
+    <detail>
+      Architected data pipelines processing millions of events from AWS Kinesis to data lakes using Spark, Databricks, Parquet, and S3 for analytics and ML workflows
+    </detail>
+    <detail>
+      Designed backend services for a stream-snapshot state management system deployed on Kubernetes with PostgreSQL for consumer state and reliability guarantees across distributed applications
+    </detail>
+    <detail>
+      Implemented CI/CD pipelines using Jenkins and GitHub Actions with automated validation, backwards-compatibility checking, semantic versioning, and deployment workflows
+    </detail>
+    <detail>
+      Developed serialization libraries with JSON (Circe, Jsoniter) and Protobuf encoding, type-class derivation for Scala Cats Eq, AWS Kinesis integration, and custom Python codecs
+    </detail>
+    <detail>
+      Migrated schema definitions from OpenAPI to AWS Smithy for event modeling with complex validation rules ensuring safe deployments across microservices
+    </detail>
+  </experience>
+
+  <experience
+    business="Topl"
+    title="Blockchain Platform Engineer"
+  >
+    <start-date year="2021" month="3" />
+    <end-date year="2022" month="5" />
+    <detail>
+      Developed a proof-of-stake blockchain runtime using Scala and Akka actors with distributed consensus algorithms, peer-to-peer networking via TCP, and actor-based concurrency
+    </detail>
+    <detail>
+      Built a transaction streaming service using http4s, Cats Effect, and MongoDB with a Protobuf API for real-time querying, indexing, and blockchain data aggregation
+    </detail>
+    <detail>
+      Designed an HTTP management API for node operations including transaction and staking key rotation, signature management, and node configuration
+    </detail>
+    <detail>
+      Created a React UI for transaction monitoring and blockchain data visualization with real-time streaming integration
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="Software Engineer I &amp; II"
+  >
+    <start-date year="2019" month="9" />
+    <end-date year="2021" month="4" />
+    <detail>
+      Architected an event-sourced change management system storing user interactions as immutable events in Event Store with state derived from event streams
+    </detail>
+    <detail>
+      Built microservices in C# and .NET on Azure with MSSQL and Event Store, implementing REST APIs for construction project workflows handling submittals, RFIs, and issues
+    </detail>
+    <detail>
+      Developed a change order tracking system with financial lineage and cross-entity references, syncing with an enterprise resource management application using Kafka streams
+    </detail>
+    <detail>
+      Implemented backend services supporting thousands of concurrent users with full-stack features including database models, APIs, and web UI components
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="QA Automation Engineer"
+  >
+    <start-date year="2018" month="8" />
+    <end-date year="2019" month="8" />
+    <detail>
+      Built a test automation framework with C# interfaces enabling non-technical team members to define and execute API and UI test scenarios
+    </detail>
+    <detail>
+      Developed an API testing framework for microservices validation and a Selenium-based UI framework for headless browser testing with XPath selectors
+    </detail>
+    <detail>
+      Executed performance and load testing to verify responsiveness under concurrent user load
+    </detail>
+  </experience>
+
+  <education
+    school="University of Portland"
+    degree="Bachelors of Science"
+  >
+    <start-date year="2015" month="8" />
+    <end-date year="2019" month="5" />
+    <detail>Computer Science Major</detail>
+    <detail>Mathematics Minor</detail>
+  </education>
+
+  <certification name="AWS Cloud Practitioner"/>
+
+  <skills group="Backend &amp; Languages">
+    <skill>Python</skill>
+    <skill>Scala</skill>
+    <skill>Java</skill>
+    <skill>C#</skill>
+    <skill>Go</skill>
+    <skill>REST APIs</skill>
+    <skill>Microservices</skill>
+    <skill>Event-driven Architecture</skill>
+  </skills>
+
+  <skills group="Data &amp; Infrastructure">
+    <skill>ETL/ELT Pipelines</skill>
+    <skill>AWS (Kinesis, DynamoDB, S3, IAM)</skill>
+    <skill>Databricks &amp; Spark</skill>
+    <skill>MongoDB</skill>
+    <skill>PostgreSQL</skill>
+    <skill>MSSQL</skill>
+    <skill>Event Store</skill>
+    <skill>Real-time Streaming</skill>
+  </skills>
+
+  <skills group="DevOps &amp; Tools">
+    <skill>Kubernetes</skill>
+    <skill>Docker</skill>
+    <skill>CI/CD (Jenkins, GitHub Actions)</skill>
+    <skill>AWS Smithy</skill>
+    <skill>Protobuf</skill>
+    <skill>Terraform</skill>
+    <skill>Azure</skill>
+    <skill>Git</skill>
+  </skills>
+
+</resume-content>

@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -28,6 +29,10 @@ func safeSlice[A any](slice []A, start int) []A {
 	}
 }
 
+func helpRequested(args []string) bool {
+	return len(args) > 0 && args[0] == "help"
+}
+
 /* Creates a static server at the given directory path. */
 func runServe(directory string) {
 	fs := http.FileServer(http.Dir(directory))
@@ -41,8 +46,16 @@ func runServe(directory string) {
 	}
 }
 
+const SERVE_HELP = "presume serve -dir <path to directory to serve over HTTP>\n" +
+	"Serves all the files contained in the given directory over HTTP on port 5050."
+
 /* Parses serve command arguments.  Returns the directory and a possible list of errors. */
 func parseServe(args []string) (string, []string) {
+	if helpRequested(args) {
+		errs := []string{SERVE_HELP}
+		return "", errs
+	}
+
 	cmd := flag.NewFlagSet("serve", flag.ExitOnError)
 
 	parsedDirectory := cmd.String("dir", "", "Path to directory to serve.")
@@ -50,7 +63,8 @@ func parseServe(args []string) (string, []string) {
 	err := cmd.Parse(args)
 
 	if err != nil {
-		log.Fatalln("Failed to parse arguments: " + err.Error())
+		fmt.Println("Failed to parse arguments: " + err.Error())
+		os.Exit(1)
 	}
 
 	dir := ""
@@ -72,6 +86,7 @@ func runGenerate(cvContent string, cvTemplate string, cvOutput string) {
 
 	if err != nil {
 		log.Println("Failed to decode XML file.", err)
+		os.Exit(1)
 	}
 
 	output, err := os.Create(cvOutput)
@@ -79,6 +94,7 @@ func runGenerate(cvContent string, cvTemplate string, cvOutput string) {
 	if err != nil {
 		log.Println("Failed to open output file.")
 		log.Println(err)
+		os.Exit(1)
 	}
 
 	err = generate.Resume(result, cvTemplate, output)
@@ -86,11 +102,19 @@ func runGenerate(cvContent string, cvTemplate string, cvOutput string) {
 	if err != nil {
 		log.Println("Failed to generate resume.")
 		log.Fatalln(err)
+		os.Exit(1)
 	}
 }
 
+const GENERATE_HELP = "presume generate -c <CV content path> -t <CV template path> -o <generated output path>"
+
 /* Parses arguments to the generate command.  Returns the content path, template path, output path, and a list of errors. */
 func parseGenerate(args []string) (string, string, string, []string) {
+	if helpRequested(args) {
+		errs := []string{GENERATE_HELP}
+		return "", "", "", errs
+	}
+
 	cmd := flag.NewFlagSet("generate", flag.ExitOnError)
 
 	if cmd == nil {
@@ -138,7 +162,7 @@ func main() {
 				log.Println(err)
 			}
 
-			log.Fatalln("Run `presume help` for additional info.")
+			fmt.Println("Run `presume help` for additional info.")
 		}
 
 		runServe(dir)
@@ -148,16 +172,19 @@ func main() {
 
 		if len(errs) > 0 {
 			for _, err := range errs {
-				log.Println(err)
+				fmt.Println(err)
 			}
-			log.Fatalln("Run `presume help` for additional info.")
+			fmt.Println("Run `presume help` for additional info.")
+			os.Exit(1)
 		}
 
 		runGenerate(content, template, output)
 		os.Exit(0)
-	case "help":
-		log.Fatalln("Generate or serve CVs using 'generate' or 'serve' commands.")
 	default:
-		log.Fatalln("Expected 'serve', 'generate', or 'help' command.")
+		message :=
+			"Generate or serve CVs using the 'generate' or 'serve' commands.\n" +
+				"Also give 'presume generate help' or 'presume serve help' a try!"
+		fmt.Println(message)
+		os.Exit(1)
 	}
 }

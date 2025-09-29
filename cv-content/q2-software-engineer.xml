@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Resume for Q2 Software Engineer Position
+  Tailored for service-oriented architecture, C# .NET, and full-stack development
+-->
+<resume-content
+  xmlns="https://github.com/b-vennes/presume"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://github.com/b-vennes/presume cv-schema.xsd"
+>
+
+  <header
+    name="Branden Vennes"
+    email="b.n.vennes@gmail.com"
+    github="b-vennes"
+  >
+    <summary>
+      Adaptable software engineer with 6+ years developing web applications and backend services across financial technology, streaming media, and construction industries. Proven expertise in C# .NET, service-oriented architectures, and cloud platforms with a strong track record of delivering custom solutions through fast-paced projects. Experienced mentoring teammates, supporting production systems with on-call availability, and applying sound design principles while maintaining pragmatic approaches to meet deadlines.
+    </summary>
+  </header>
+
+  <experience
+    business="The Walt Disney Company"
+    title="Software Engineer II"
+  >
+    <start-date year="2022" month="6" />
+    <end-date year="2025" month="8" />
+
+    <detail>
+      Designed and implemented a streaming data platform providing schema registry and integration libraries for event-driven microservices processing millions of daily events across distributed systems
+    </detail>
+    <detail>
+      Built a state management system enabling applications to maintain real-time state from event streams, successfully deployed to production supporting critical content metadata workflows
+    </detail>
+    <detail>
+      Developed CI/CD pipelines using Jenkins and GitHub Actions with automated validation, compatibility checking, and multi-language artifact deployment supporting rapid delivery cycles
+    </detail>
+    <detail>
+      Collaborated across teams to troubleshoot production issues, providing on-call support and implementing solutions under tight deadlines while maintaining system stability
+    </detail>
+    <detail>
+      Mentored team members on design patterns, cloud services, and best practices for building scalable distributed systems
+    </detail>
+    <detail>
+      Migrated schema definitions improving type safety and reducing runtime errors across distributed services
+    </detail>
+  </experience>
+
+  <experience
+    business="Topl"
+    title="Blockchain Platform Engineer"
+  >
+    <start-date year="2021" month="3" />
+    <end-date year="2022" month="5" />
+    <detail>
+      Developed core platform components in a fast-paced startup environment, building distributed systems with network communication protocols and fault-tolerant architectures
+    </detail>
+    <detail>
+      Built a RESTful HTTP management API enabling operators to configure systems, manage cryptographic keys, and monitor operations in real-time
+    </detail>
+    <detail>
+      Created a data streaming service with MongoDB integration providing real-time data access through a well-defined API, enabling downstream applications to consume blockchain events
+    </detail>
+    <detail>
+      Designed a React web interface demonstrating integration capabilities, working across the entire stack to deliver complete solutions from frontend to backend
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="Software Engineer I &amp; II"
+  >
+    <start-date year="2019" month="9" />
+    <end-date year="2021" month="4" />
+    <detail>
+      Developed full-stack solutions for a construction project management web application using C# .NET microservices, MS SQL databases, and modern web technologies deployed on Azure
+    </detail>
+    <detail>
+      Architected an event-sourced change management system with complete audit trails, storing user interactions as events and deriving application state from event streams
+    </detail>
+    <detail>
+      Built sophisticated change order tracking features with financial lineage and cross-entity referencing, integrated with an enterprise resource management application
+    </detail>
+    <detail>
+      Implemented database model changes, REST API enhancements, and responsive UI components across the entire application stack in a service-oriented architecture
+    </detail>
+    <detail>
+      Collaborated in an Agile development environment with code reviews, sprint planning, and iterative delivery cycles, consistently meeting deadlines
+    </detail>
+    <detail>
+      Supported production systems with troubleshooting, bug fixes, and flexible hours for deployments and emergency support on an on-call rotation
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="QA Automation Engineer"
+  >
+    <start-date year="2018" month="8" />
+    <end-date year="2019" month="8" />
+    <detail>
+      Built a comprehensive test automation framework using C# enabling team members to define and execute complex test scenarios for microservices architectures
+    </detail>
+    <detail>
+      Developed an API testing framework for microservices validation and a Selenium-based UI testing framework for browser-based test execution
+    </detail>
+    <detail>
+      Executed regular performance testing including bulk operations and load testing to ensure application responsiveness under production conditions
+    </detail>
+    <detail>
+      Established quality assurance processes and test documentation, reducing production defects and improving overall software reliability
+    </detail>
+  </experience>
+
+  <education
+    school="University of Portland"
+    degree="Bachelors of Science"
+  >
+    <start-date year="2015" month="8" />
+    <end-date year="2019" month="5" />
+    <detail>Computer Science Major</detail>
+    <detail>Mathematics Minor</detail>
+  </education>
+
+  <certification name="AWS Cloud Practitioner"/>
+
+  <skills group="Languages &amp; Frameworks">
+    <skill>C#</skill>
+    <skill>.NET</skill>
+    <skill>JavaScript/TypeScript</skill>
+    <skill>SQL</skill>
+    <skill>Python</skill>
+  </skills>
+
+  <skills group="Web &amp; Cloud Technologies">
+    <skill>MSSQL and PostgreSQL</skill>
+    <skill>RESTful API Design</skill>
+    <skill>Service-Oriented Architecture</skill>
+    <skill>Microservices</skill>
+    <skill>Azure Cloud Platform</skill>
+    <skill>AWS</skill>
+    <skill>CI/CD Pipelines</skill>
+  </skills>
+
+  <skills group="Development Practices">
+    <skill>Agile Development</skill>
+    <skill>Test-Driven Development</skill>
+    <skill>Code Reviews</skill>
+    <skill>Event Sourcing</skill>
+    <skill>Performance Testing</skill>
+  </skills>
+
+</resume-content>

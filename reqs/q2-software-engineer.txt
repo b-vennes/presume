@@ -1,0 +1,40 @@
+Q2 Software Engineer
+https://q2ebanking.wd5.myworkdayjobs.com/en-US/Q2/job/Software-Engineer_REQ-11665
+
+Why Join Q2?
+
+Q2 is a leading provider of digital banking and lending solutions to banks, credit unions, alternative finance companies, and fintechs in the U.S. and internationally. Our mission is simple: build strong and diverse communities through innovative financial technology—and we do that by empowering our people to help create success for our customers.
+
+What Makes Q2 Special?
+
+Being as passionate about our people as we are about our mission. We celebrate our employees in many ways, including our “Circle of Awesomeness” award ceremony and day of employee celebration among others! We invest in the growth and development of our team members through ongoing learning opportunities, mentorship programs, internal mobility, and meaningful leadership relationships. We also know that nothing builds trust and collaboration like having fun. We hold an annual Dodgeball for Charity event at our Q2 Stadium in Austin, inviting other local companies to play, and community organizations we support to raise money and awareness together.
+
+Q2 is seeking an ambitious and adaptable Software Developer experienced in the ins and outs of development in a team setting.  As part of our Engineering Development group based in Austin, TX, you will be working individually and collaboratively to develop, implement, and support custom solutions through fast-paced, dynamic projects involving components at every level of the Q2 platform to extend its functionality to meet our clients’ unique needs.  Our ideal candidate is someone with a self-motivated tinkering spirit and who is comfortable diving into professional development life while rapidly learning to engineer solutions using a mix of open technologies and our own proprietary framework.
+
+RESPONSIBILITIES:
+
+    Design, implement, integrate, and test software solutions of moderate complexity comprised of Windows- and Linux-based front-end and back-end components that interact with end users and integrate with internal and external services
+    Work individually and collaboratively to deliver solutions in live production systems
+    Support, maintain, and resolve problems for custom features in live production systems, with occasional on-call availability
+    Assist and mentor teammates to provide technical leadership and evangelize best practices
+
+EXPERIENCE AND KNOWLEDGE:
+
+    Bachelor’s degree and up to 2+ years of related software engineering experience
+    Proficiency in C#, .NET
+    Web development experience
+    Passion for applying good design principals while exercising pragmatism to keep deadlines
+    Experience in all aspects of the software development life cycle
+    Experience engineering software in a service-oriented architecture
+    Strong analytical and problem-solving skills
+    Effective communication skills
+    Experience contributing in an Agile development environment
+    Good interpersonal skills
+    Occasional availability for on-call/emergency support
+    Ability to work flexible hours when necessary for deadlines and off-hours installations
+    Experience with Golang a plus
+
+This position requires fluent written and oral communication in English. 
+
+Applicants must be authorized to work for any employer in the U.S. We are unable to sponsor or take over sponsorship of an employment Visa at this time.
+
