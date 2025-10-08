@@ -1,3 +1,4 @@
+// Package main contains the CLI to generate and serve resumes.
 package main
 
 import (
@@ -6,12 +7,14 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"strconv"
 
 	"github.com/b-vennes/presume/pkg/generate"
 	"github.com/b-vennes/presume/pkg/xmldecoding"
 )
 
-/* Safely retrieves the value at the given index with the given fallback alternative. */
+// Safely retrieves the value at the given index with the given fallback
+// alternative.
 func safeGet[A any](slice []A, index int, fallback A) A {
 	if len(slice) <= index {
 		return fallback
@@ -20,7 +23,8 @@ func safeGet[A any](slice []A, index int, fallback A) A {
 	}
 }
 
-/* Safely slices the given slice starting at the given index to the end.  If the index is beyond the slice then it returns an empty slice. */
+// Safely slices the given slice starting at the given index to the end.
+// If the index is beyond the slice then it returns an empty slice.
 func safeSlice[A any](slice []A, start int) []A {
 	if len(slice) <= start {
 		return []A{}
@@ -29,36 +33,51 @@ func safeSlice[A any](slice []A, start int) []A {
 	}
 }
 
+// Checks if help was requested by the user.
 func helpRequested(args []string) bool {
 	return len(args) > 0 && args[0] == "help"
 }
 
-/* Creates a static server at the given directory path. */
-func runServe(directory string) {
-	fs := http.FileServer(http.Dir(directory))
-
-	log.Print("Listening on :5050...")
-
-	err := http.ListenAndServe(":5050", fs)
-
-	if err != nil {
-		log.Fatal(err)
-	}
+type ServeArgs struct {
+	// The directory of files to serve.
+	Directory string
+	// The port to serve files on.
+	Port string
 }
 
-const SERVE_HELP = "presume serve -dir <path to directory to serve over HTTP>\n" +
+// Creates a static server at the given directory path.
+func runServe(args ServeArgs) int {
+	log.Println("Serving", args.Directory)
+
+	fs := http.FileServer(http.Dir(args.Directory))
+
+	log.Println("Listening on", ":"+args.Port)
+
+	err := http.ListenAndServe(":"+args.Port, fs)
+
+	if err != nil {
+		log.Println(err)
+		return 1
+	}
+
+	return 0
+}
+
+const SERVE_HELP = "presume serve -dir <path to directory to serve over HTTP> -p <port : defaults to 5050>\n" +
 	"Serves all the files contained in the given directory over HTTP on port 5050."
 
-/* Parses serve command arguments.  Returns the directory and a possible list of errors. */
-func parseServe(args []string) (string, []string) {
+// Parses serve command arguments.
+// Returns a tuple of the serve args and a possible list of errors.
+func parseServe(args []string) (*ServeArgs, []string) {
 	if helpRequested(args) {
 		errs := []string{SERVE_HELP}
-		return "", errs
+		return nil, errs
 	}
 
 	cmd := flag.NewFlagSet("serve", flag.ExitOnError)
 
 	parsedDirectory := cmd.String("dir", "", "Path to directory to serve.")
+	parsedPort := cmd.Int("p", 5050, "Port to serve files on.")
 
 	err := cmd.Parse(args)
 
@@ -67,58 +86,74 @@ func parseServe(args []string) (string, []string) {
 		os.Exit(1)
 	}
 
-	dir := ""
-
 	errs := []string{}
 
 	if parsedDirectory == nil || *parsedDirectory == "" {
 		errs = append(errs, "No 'dir' argument provided.")
 	}
 
-	dir = *parsedDirectory
+	if len(errs) > 0 {
+		return nil, errs
+	}
 
-	return dir, errs
+	return &ServeArgs{
+			Directory: *parsedDirectory,
+			Port:      strconv.Itoa(*parsedPort),
+		},
+		nil
 }
 
-/* Runs the CV generator using the given options. */
-func runGenerate(cvContent string, cvTemplate string, cvOutput string) {
-	result, err := xmldecoding.Decode(cvContent)
+type GenerateArgs struct {
+	ContentPath  string
+	TemplatePath string
+	OutputPath   string
+}
+
+// Runs the CV generator using the given options.
+func runGenerate(args GenerateArgs) int {
+	result, err := xmldecoding.Decode(args.ContentPath)
 
 	if err != nil {
 		log.Println("Failed to decode XML file.", err)
-		os.Exit(1)
+		return 1
 	}
 
-	output, err := os.Create(cvOutput)
+	output, err := os.Create(args.OutputPath)
 
 	if err != nil {
 		log.Println("Failed to open output file.")
 		log.Println(err)
-		os.Exit(1)
+		return 1
 	}
 
-	err = generate.Resume(result, cvTemplate, output)
+	err = generate.Resume(result, args.TemplatePath, output)
 
 	if err != nil {
 		log.Println("Failed to generate resume.")
-		log.Fatalln(err)
-		os.Exit(1)
+		log.Println(err)
+		return 1
 	}
+
+	return 0
 }
 
 const GENERATE_HELP = "presume generate -c <CV content path> -t <CV template path> -o <generated output path>"
 
-/* Parses arguments to the generate command.  Returns the content path, template path, output path, and a list of errors. */
-func parseGenerate(args []string) (string, string, string, []string) {
+// Parses arguments to the generate command.
+// Returns a tuple of a pointer to the generated args (possible nil)
+// and a list of errors (if there were any).
+func parseGenerate(args []string) (*GenerateArgs, []string) {
 	if helpRequested(args) {
 		errs := []string{GENERATE_HELP}
-		return "", "", "", errs
+		return nil, errs
 	}
 
 	cmd := flag.NewFlagSet("generate", flag.ExitOnError)
 
 	if cmd == nil {
-		log.Fatal("Failed to create 'generate' command processor.")
+		err := "Failed to create 'generate' command processor."
+		log.Println(err)
+		return nil, []string{err}
 	}
 
 	parsedCVContent := cmd.String("c", "", "CV content path")
@@ -149,42 +184,58 @@ func parseGenerate(args []string) (string, string, string, []string) {
 		output = *parsedCVOutput
 	}
 
-	return content, template, output, errs
+	if len(errs) != 0 {
+		return nil, errs
+	}
+
+	generateArgs := GenerateArgs{
+		ContentPath:  content,
+		TemplatePath: template,
+		OutputPath:   output,
+	}
+
+	return &generateArgs, nil
 }
 
 func main() {
+	exitCode := 0
+
 	switch safeGet(os.Args, 1, "") {
 	case "serve":
-		dir, errs := parseServe(safeSlice(os.Args, 2))
+		serveArgs, errs := parseServe(safeSlice(os.Args, 2))
 
-		if len(errs) > 0 {
+		if errs != nil {
 			for _, err := range errs {
 				log.Println(err)
 			}
 
 			fmt.Println("Run `presume help` for additional info.")
+			exitCode = 1
+			break
 		}
 
-		runServe(dir)
-		os.Exit(0)
+		exitCode = runServe(*serveArgs)
 	case "generate":
-		content, template, output, errs := parseGenerate(safeSlice(os.Args, 2))
+		generateArgs, errs := parseGenerate(safeSlice(os.Args, 2))
 
-		if len(errs) > 0 {
+		if errs != nil {
 			for _, err := range errs {
 				fmt.Println(err)
 			}
 			fmt.Println("Run `presume help` for additional info.")
-			os.Exit(1)
+
+			exitCode = 1
+			break
 		}
 
-		runGenerate(content, template, output)
-		os.Exit(0)
+		exitCode = runGenerate(*generateArgs)
 	default:
 		message :=
 			"Generate or serve CVs using the 'generate' or 'serve' commands.\n" +
 				"Also give 'presume generate help' or 'presume serve help' a try!"
 		fmt.Println(message)
-		os.Exit(1)
+		exitCode = 1
 	}
+
+	os.Exit(exitCode)
 }

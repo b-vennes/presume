@@ -21,6 +21,7 @@ func makeNewDecoderError() newDecoderError {
 	return newDecoderError{}
 }
 
+// Decodes resume content from the given XML file path.
 func Decode(filePath string) (*models.ResumeContentData, error) {
 	file, err := os.Open(filePath)
 

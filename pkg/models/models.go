@@ -57,10 +57,6 @@ type Date struct {
 	Month Month `xml:"month,attr"`
 }
 
-func DateZero() Date {
-	return Date{}
-}
-
 type ExperienceData struct {
 	Business  string   `xml:"business,attr"`
 	Title     string   `xml:"title,attr"`
@@ -129,7 +125,7 @@ type ExperienceView struct {
 }
 
 func (d Date) String() string {
-	if d == DateZero() {
+	if d == (Date{}) {
 		return "Present"
 	}
 

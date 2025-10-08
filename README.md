@@ -1,18 +1,33 @@
 # Presume
 
-Generate a CV using an HTML Go template and typed XML data.
+Generate a CV using an HTML Go template and typed XML content.
 
 The [Go toolchain](https://go.dev/dl/) is required to build and run the application.
 
+The `cv-content` directory contains some examples of my CVs. The `cv-content/cv-schema.xsd` file contains the defined XML schema.
+
 ## Build
 
-`go build .`
+`make presume`
 
 ## Run
 
-```bash
-go run main.go \
-  -c [content-xml-path] \
-  -t [view-template-html-path] \
-  -o [output-file-html-path]
-```
+### Generate
+
+First, set arguments to the generate command in the `GENERATE_ARGS` environment variable.
+
+`export GENERATE_ARGS="-c ./cv-content/general.xml -t ./cv-template/colorful.html -o ./generated/general.html"`
+
+Then,
+
+`make generate`
+
+### Serve
+
+First, set arguments to the serve command in the `SERVE_ARGS` environment variable.
+
+`export SERVE_ARGS="-dir ./generated"`
+
+Then,
+
+`make serve`

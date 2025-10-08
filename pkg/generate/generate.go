@@ -10,6 +10,8 @@ import (
 	"github.com/b-vennes/presume/pkg/models"
 )
 
+// Generates a resume using the given resume data, template path, and output
+// writer.
 func Resume(data *models.ResumeContentData, templatePath string, output io.Writer) error {
 	t, err := template.ParseFiles(templatePath)
 
