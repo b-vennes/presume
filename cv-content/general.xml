@@ -17,7 +17,7 @@
     site="www.brandenvennes.com"
   >
     <summary>
-      Experienced full-stack software engineer with 6+ years developing scalable distributed systems, streaming data platforms, and event-driven architectures. Proven track record building mission-critical systems serving millions of users across entertainment, blockchain, and construction industries. Strong expertise in schema management, real-time data processing, CI/CD pipelines, and both functional and object-oriented programming paradigms. AWS certified with entrepreneurial experience from working at a blockchain startup.
+      Experienced full-stack software engineer with six years developing scalable distributed systems, streaming data platforms, and event-driven architectures. Understanding of how to build mission-critical systems serving millions of users across entertainment, blockchain, and construction industries. Strong expertise in schema management, real-time data processing, CI/CD pipelines, and both functional and object-oriented programming paradigms. AWS certified with entrepreneurial startup experience.
     </summary>
   </header>
 
@@ -32,7 +32,7 @@
       Architected and maintained a critical streaming data platform serving 50+ engineering teams across Disney+ and Hulu, processing millions of real-time events through AWS Kinesis streams with DynamoDB-backed consumer state management
     </detail>
     <detail>
-      Built a stream-snapshot state management system integrated into the company's unified content metadata catalog, enabling teams to maintain application state from event streams for television, movie, and sports content
+      Built a stream-snapshot state management system integrated into the company's unified content metadata catalog, enabling teams to maintain application state from high-throughput event streams for television, movie, and sports content
     </detail>
     <detail>
       Developed a robust schema registry using OpenAPI and AWS Smithy schemas with backwards and forwards compatibility validation ensuring safe deployments across distributed services

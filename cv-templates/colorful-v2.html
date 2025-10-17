@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>{{- .Header.Name -}}'s CV</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div
+      id="root"
+      class="flex flex-row justify-center w-full h-full minmin-h-0">
+      <div
+        id="resume"
+        class="flex flex-col gap-4 m-0 p-4 w-full bg-white relative"
+      >
+        <div id="header" class="flex flex-col gap-3 p-0">
+          <p
+            id="name"
+            class="text-4xl font-serif font-bold"
+          >
+            {{- .Header.Name -}}
+          </p>
+          <p id="summary" class="text-base text-sm leading-snug text-slate-700">
+            {{- .Header.Summary -}}
+          </p>
+          <div
+            id="header-details"
+            class="flex flex-row flex-wrap gap-3 print:gap-2"
+          >
+            <div class="flex flex-row rounded-full border-2 px-3 py-1 gap-2">
+              <p class="italic text-xs font-medium text-blue-600">Email</p>
+              <p class="text-xs font-semibold text-slate-800">{{- .Header.Email -}}</p>
+            </div>
+            <div class="flex flex-row rounded-full border-2 border-indigo-400 px-3 py-1 gap-2">
+              <p class="italic text-xs font-medium text-indigo-600">GitHub</p>
+              <p class="text-xs font-semibold text-slate-800">{{- .Header.Github -}}</p>
+            </div>
+            <div class="flex flex-row rounded-full border-2 border-pink-400 px-3 py-1 gap-2">
+              <p class="italic text-xs font-medium text-pink-600">Site</p>
+              <p class="text-xs font-semibold text-slate-800">{{- .Header.Site -}}</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="experience" class="flex flex-col gap-3 p-3 border border-slate-200 rounded-lg">
+          <h2 class="text-xl font-serif font-bold bg-clip-text border-b-4 border-blue-500 pb-2">Experience</h2>
+          {{range .Experience}}
+          <div class="border border-slate-200 rounded-lg p-3 border-l-4 border-blue-500">
+            <p class="text-lg font-serif font-bold text-slate-800">{{- .Business -}}</p>
+            <p class="text-base text-blue-600 font-semibold">{{- .Title -}}</p>
+            <p class="text-xs font-mono text-slate-700 border border-amber-300 inline-block px-2 py-0.5 rounded-full mt-1">{{- .StartDate }} - {{ .EndDate -}}</p>
+            <ul class="list-disc list-inside mt-2 space-y-1">
+            {{range .Details}}
+            <li class="text-slate-700 text-sm leading-snug">
+              {{- . -}}
+            </li>
+            {{end}}
+            </ul>
+          </div>
+          {{end}}
+        </div>
+
+        <div id="training" class="grid grid-cols-3 gap-3">
+          <div id="education" class="flex flex-col gap-2 p-3 border border-slate-200 rounded-lg">
+            <h2 class="text-xl font-serif font-bold border-b-4 border-indigo-500 pb-2">Education</h2>
+            {{range .Education}}
+            <div class="border border-slate-200 rounded-lg p-3 border-l-4 border-indigo-500">
+              <p class="text-base font-serif font-bold text-slate-800">{{- .School -}}</p>
+              <p class="text-xs font-mono text-slate-700 border border-amber-300 inline-block px-2 py-0.5 rounded-full mt-1">{{- .StartDate }} - {{.EndDate -}}</p>
+              <p class="text-base text-indigo-600 font-semibold mt-1">{{- .Degree -}}</p>
+              <ul class="mt-1 space-y-0.5">
+              {{range .Details }}
+                <li class="text-xs list-disc list-inside text-slate-700">
+                  {{- . -}}
+                </li>
+              {{end}}
+              </ul>
+            </div>
+            {{end}}
+          </div>
+          {{ if .Certifications }}
+          <div id="certifications" class="flex flex-col gap-2 p-3 border border-slate-200 rounded-lg">
+            <p class="text-lg font-serif font-bold border-b-4 border-amber-500 pb-2">Certifications</p>
+            {{range .Certifications}}
+            <div class="border border-slate-200 rounded-lg p-2 border-l-4 border-amber-500">
+              <p class="font-semibold text-slate-800 text-sm">{{ .Name }}</p>
+            </div>
+            {{end}}
+          </div>
+          {{end}}
+        </div>
+
+        <div id="skills" class="grid grid-cols-3 gap-3">
+          {{range .Skills}}
+          <div class="p-3 border border-slate-200 rounded-lg">
+            <p class="text-base font-serif font-bold bg-clip-text border-b-4 border-slate-400 pb-2 mb-2">
+              {{- .Group -}}
+            </p>
+            <ul class="space-y-1">
+              {{range .Skills}}
+              <li class="text-xs text-slate-700 rounded-lg px-3 py-1 border-l-4 border-b-2 border-slate-300 font-medium">
+                {{ . }}
+              </li>
+              {{end}}
+            </ul>
+          </div>
+          {{end}}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

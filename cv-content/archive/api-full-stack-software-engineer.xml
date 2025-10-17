@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Resume for API LLC Full Stack Software Engineer position
+  Emphasizing Python, React, AWS, data management, and CI/CD experience
+-->
+<resume-content
+  xmlns="https://github.com/b-vennes/presume"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://github.com/b-vennes/presume cv-schema.xsd"
+>
+
+  <header
+    name="Branden Vennes"
+    email="b.n.vennes@gmail.com"
+    github="b-vennes"
+    site="www.brandenvennes.com"
+  >
+    <summary>
+      Full-stack software engineer with 6+ years of experience building scalable applications and data platforms using Python, React, and modern cloud technologies. Proven expertise in AWS services, CI/CD automation, and both SQL and NoSQL databases. Strong track record delivering mission-critical systems at Disney that process millions of events daily, with experience supporting data science and machine learning initiatives through robust data pipelines and integrations.
+    </summary>
+  </header>
+
+  <experience
+    business="The Walt Disney Company"
+    title="Software Engineer II"
+  >
+    <start-date year="2022" month="6" />
+    <end-date year="2025" month="8" />
+
+    <detail>
+      Architected and maintained a streaming data platform serving 50+ engineering teams, building Python, Java, and Scala libraries for producing and consuming real-time events with AWS Kinesis and DynamoDB
+    </detail>
+    <detail>
+      Developed automated code generation pipelines producing Python data types and serialization libraries from schema definitions, enabling type-safe data handling across microservices
+    </detail>
+    <detail>
+      Built a stream-snapshot state management system enabling teams to derive application state from event streams, integrated into the company's unified content metadata catalog for television, movie, and sports content
+    </detail>
+    <detail>
+      Designed and implemented robust CI/CD pipelines using Jenkins and GitHub Actions with automated schema validation, backwards and forwards compatibility checking, and semantic versioning workflows
+    </detail>
+    <detail>
+      Engineered data lake integrations using Apache Spark, Databricks, and AWS S3 to transform streaming data for machine learning workflows and executive dashboard generation
+    </detail>
+    <detail>
+      Built data pipeline lineage tracking using OpenLineage and Marquez, developing a Java agent to automatically capture schema usage and encoding formats across distributed applications
+    </detail>
+    <detail>
+      Created comprehensive documentation sites using static site generation integrated with GitHub Pages for team onboarding and API reference materials
+    </detail>
+  </experience>
+
+  <experience
+    business="Topl"
+    title="Blockchain Platform Engineer"
+  >
+    <start-date year="2021" month="3" />
+    <end-date year="2022" month="5" />
+    <detail>
+      Developed core blockchain platform components using Scala and distributed systems patterns, implementing proof-of-stake consensus algorithms and TCP-based peer-to-peer networking
+    </detail>
+    <detail>
+      Built a RESTful HTTP API for node management enabling users to configure blockchain nodes, manage cryptographic keys, and monitor network operations
+    </detail>
+    <detail>
+      Created a high-performance transaction streaming service using MongoDB for data indexing with a custom querying DSL, enabling real-time blockchain data analysis
+    </detail>
+    <detail>
+      Designed and implemented React user interfaces including an interactive transaction monitoring dashboard and a Chrome extension for virtual wallet management
+    </detail>
+    <detail>
+      Established end-to-end functional test suites using Postman collections and Newman test runner integrated with CI/CD pipelines
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="Software Engineer I &amp; II"
+  >
+    <start-date year="2019" month="9" />
+    <end-date year="2021" month="4" />
+    <detail>
+      Developed full-stack features for a construction project management web application using C# microservices, MSSQL databases, and Angular with TypeScript and RxJS
+    </detail>
+    <detail>
+      Architected an event-sourced change order tracking system with immutable audit trails and Kafka stream integration for real-time data synchronization with an enterprise resource planning system
+    </detail>
+    <detail>
+      Implemented complex data models and database schemas in MSSQL supporting organizational workflows for submittals, RFIs, issues, and document management
+    </detail>
+    <detail>
+      Deployed applications to Azure cloud platform using automated CI/CD pipelines and Git-based source control with Azure DevOps for ticket tracking
+    </detail>
+    <detail>
+      Collaborated in an Agile environment with daily standups, sprint planning, and retrospectives to deliver features on time
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="QA Automation Engineer"
+  >
+    <start-date year="2018" month="8" />
+    <end-date year="2019" month="8" />
+    <detail>
+      Designed a comprehensive test automation framework using C# enabling both technical and non-technical team members to define and execute test scenarios
+    </detail>
+    <detail>
+      Built API testing framework for microservices validation and Selenium-based UI testing framework with XPath navigation for browser automation
+    </detail>
+    <detail>
+      Executed performance testing using JMeter and Locust to simulate thousands of concurrent users, ensuring application scalability and identifying bottlenecks
+    </detail>
+    <detail>
+      Balanced manual testing responsibilities with framework development, writing comprehensive test cases and improving quality assurance processes
+    </detail>
+  </experience>
+
+  <education
+    school="University of Portland"
+    degree="Bachelors of Science"
+  >
+    <start-date year="2015" month="8" />
+    <end-date year="2019" month="5" />
+    <detail>Computer Science Major</detail>
+    <detail>Mathematics Minor</detail>
+  </education>
+
+  <certification name="AWS Cloud Practitioner"/>
+
+  <skills group="Languages &amp; Frontend">
+    <skill>Python</skill>
+    <skill>JavaScript &amp; TypeScript</skill>
+    <skill>React</skill>
+    <skill>HTML/CSS</skill>
+    <skill>Angular</skill>
+    <skill>RxJS</skill>
+  </skills>
+
+  <skills group="Backend &amp; Data">
+    <skill>AWS (Kinesis, DynamoDB, S3, IAM)</skill>
+    <skill>SQL (PostgreSQL, MSSQL) &amp; NoSQL (DynamoDB, MongoDB)</skill>
+    <skill>RESTful APIs &amp; Microservices</skill>
+    <skill>Apache Spark &amp; Databricks</skill>
+    <skill>Kafka Streams</skill>
+    <skill>Event-driven Architecture</skill>
+  </skills>
+
+  <skills group="DevOps &amp; Tools">
+    <skill>Git &amp; GitHub Workflows</skill>
+    <skill>CI/CD (Jenkins, GitHub Actions)</skill>
+    <skill>Docker</skill>
+    <skill>Agile/SCRUM</skill>
+    <skill>Azure Cloud Platform</skill>
+  </skills>
+
+</resume-content>

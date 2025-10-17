@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Resume for LifeStance Health Senior Software Engineer - Full Stack Javascript position
+  Focus: TypeScript/JavaScript, React, Node.js, microservices, event-driven architecture, AWS
+  Emphasizing: full-stack development, collaborative engineering, technical mentorship, scalability
+-->
+<resume-content
+  xmlns="https://github.com/b-vennes/presume"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://github.com/b-vennes/presume cv-schema.xsd"
+>
+
+  <header
+    name="Branden Vennes"
+    email="b.n.vennes@gmail.com"
+    github="b-vennes"
+    site="www.brandenvennes.com"
+  >
+    <summary>
+      Full-stack engineer with 6 years of experience building scalable, high-quality software solutions across modern web applications and cloud-based microservices. Expertise in TypeScript and event-driven architectures serving millions of users in production environments. Ability to collaborate with cross-functional teams to deliver intuitive user experiences while maintaining technical excellence through code reviews, mentorship, and rigorous engineering practices. AWS certified with deep experience in serverless architectures, RESTful API design, and building secure, maintainable systems.
+    </summary>
+  </header>
+
+  <experience
+    business="The Walt Disney Company"
+    title="Software Engineer II"
+  >
+    <start-date year="2022" month="6" />
+    <end-date year="2025" month="8" />
+
+    <detail>
+      Architected and maintained a streaming data platform serving 50+ engineering teams across Disney+ and Hulu, processing millions of real-time events through AWS Kinesis with DynamoDB-backed state management achieving 99.9% uptime
+    </detail>
+    <detail>
+      Built a sophisticated schema registry with automated validation and code generation pipelines using GitHub Actions and Jenkins, enabling safe schema evolution across distributed microservices with backwards and forwards compatibility guarantees
+    </detail>
+    <detail>
+      Developed a state management system integrated into the company's content metadata catalog, enabling teams to derive application state from event streams for television, movie, and sports content serving millions of concurrent users
+    </detail>
+    <detail>
+      Designed RESTful APIs and event-driven microservices using AWS infrastructure including S3, DynamoDB, PostgreSQL, and IAM with comprehensive security controls and monitoring
+    </detail>
+    <detail>
+      Implemented data pipeline integrations connecting real-time event streams to analytics platforms using Spark and Databricks, enabling machine learning workflows and executive dashboards for business intelligence teams
+    </detail>
+    <detail>
+      Mentored junior engineers through code reviews and pair programming, establishing best practices for clean code, testing strategies, and system design patterns
+    </detail>
+    <detail>
+      Collaborated closely with product managers, designers, and stakeholders to translate business requirements into technical solutions, delivering high-impact features autonomously while maintaining alignment with team goals
+    </detail>
+  </experience>
+
+  <experience
+    business="Topl"
+    title="Blockchain Platform Engineer"
+  >
+    <start-date year="2021" month="3" />
+    <end-date year="2022" month="5" />
+
+    <detail>
+      Built a high-performance transaction streaming service with RESTful APIs enabling real-time blockchain data queries, utilizing MongoDB for indexing and supporting thousands of concurrent users
+    </detail>
+    <detail>
+      Developed React-based user interfaces including a transaction monitoring dashboard and a Chrome extension for wallet management, delivering intuitive experiences for non-technical users to interact with complex blockchain operations
+    </detail>
+    <detail>
+      Designed comprehensive HTTP management APIs for node operations including cryptographic key management, transaction signing, and system monitoring with robust security controls
+    </detail>
+    <detail>
+      Architected distributed microservices with fault-tolerant peer-to-peer networking, implementing asynchronous processing patterns and ensuring system reliability under high load
+    </detail>
+    <detail>
+      Collaborated in a fast-paced startup environment directly with founders and cross-functional teams, rapidly iterating on features and establishing engineering practices for the growing platform
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="Software Engineer I &amp; II"
+  >
+    <start-date year="2019" month="9" />
+    <end-date year="2021" month="4" />
+
+    <detail>
+      Developed full-stack features for an enterprise construction management web application using TypeScript, Angular with RxJS for reactive state management, and C# ASP.NET microservices serving thousands of daily users
+    </detail>
+    <detail>
+      Architected an event-sourced change order system with immutable audit trails, storing user interactions as events and deriving application state with complex business logic, ensuring data consistency and complete traceability
+    </detail>
+    <detail>
+      Built real-time data synchronization infrastructure using Kafka streams to integrate with the flagship enterprise resource management system, implementing bidirectional data flow with conflict resolution and error handling
+    </detail>
+    <detail>
+      Designed and optimized database schemas using MSSQL with comprehensive indexing strategies, improving query performance for high-traffic endpoints and reducing response times by 60%
+    </detail>
+    <detail>
+      Deployed microservices architecture to the Azure cloud platform with CI/CD pipelines ensuring rapid feature delivery, automated testing, and zero-downtime deployments
+    </detail>
+    <detail>
+      Participated in agile ceremonies and collaborative code reviews, contributing to architectural decisions and fostering a culture of engineering excellence through knowledge sharing and technical mentorship
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="QA Automation Engineer"
+  >
+    <start-date year="2018" month="8" />
+    <end-date year="2019" month="8" />
+
+    <detail>
+      Designed a comprehensive test automation framework using C# enabling non-technical team members to define and execute complex test scenarios, improving testing coverage and reducing manual effort by 75%
+    </detail>
+    <detail>
+      Built API testing infrastructure for microservices validation and a Selenium-based UI testing framework supporting headless and browser-based execution with XPath navigation
+    </detail>
+    <detail>
+      Executed performance and load testing using JMeter and Locust to simulate thousands of concurrent user scenarios, proactively identifying and resolving scalability bottlenecks before production deployments
+    </detail>
+    <detail>
+      Established quality assurance processes and comprehensive test documentation, contributing to improved code reliability and reduced production defects across the engineering organization
+    </detail>
+  </experience>
+
+  <education
+    school="University of Portland"
+    degree="Bachelors of Science"
+  >
+    <start-date year="2015" month="8" />
+    <end-date year="2019" month="5" />
+    <detail>Computer Science Major</detail>
+    <detail>Mathematics Minor</detail>
+  </education>
+
+  <certification name="AWS Cloud Practitioner"/>
+
+  <skills group="Frontend &amp; Full-Stack">
+    <skill>JavaScript &amp; TypeScript</skill>
+    <skill>React</skill>
+    <skill>Angular</skill>
+    <skill>RxJS &amp; Reactive Programming</skill>
+    <skill>HTML/CSS</skill>
+    <skill>Component-Based Architecture</skill>
+    <skill>State Management</skill>
+  </skills>
+
+  <skills group="Backend &amp; Cloud">
+    <skill>RESTful API Design</skill>
+    <skill>Microservices Architecture</skill>
+    <skill>Event-Driven Systems</skill>
+    <skill>AWS (DynamoDB, S3, Kinesis, IAM, PostgreSQL)</skill>
+    <skill>Azure Cloud Platform</skill>
+    <skill>Serverless Computing</skill>
+    <skill>CI/CD Pipelines</skill>
+  </skills>
+
+  <skills group="Databases &amp; Development">
+    <skill>SQL Databases (PostgreSQL, MSSQL)</skill>
+    <skill>NoSQL Databases (DynamoDB, MongoDB)</skill>
+    <skill>Asynchronous Processing</skill>
+    <skill>Code Reviews &amp; Mentorship</skill>
+    <skill>Agile Development</skill>
+    <skill>Secure Coding Practices</skill>
+  </skills>
+
+</resume-content>
