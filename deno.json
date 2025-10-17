@@ -1,0 +1,11 @@
+{
+  "tasks": {
+    "tailwind": "tailwindcss"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "@tailwindcss/cli": "npm:@tailwindcss/cli@^4.1.14",
+    "tailwindcss": "npm:tailwindcss@^4.1.14"
+  },
+  "nodeModulesDir": "auto"
+}

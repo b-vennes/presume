@@ -7,3 +7,5 @@ presume
 presume.exe
 .DS_Store
 .env
+vendor
+node_modules

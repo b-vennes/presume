@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Empty CV with name and companies filled out.
+-->
+<resume-content
+  xmlns="https://github.com/b-vennes/presume"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://github.com/b-vennes/presume cv-schema.xsd"
+>
+
+  <header
+    name="Branden Vennes"
+    email="b.n.vennes@gmail.com"
+    github="b-vennes"
+    site="www.brandenvennes.com"
+  >
+    <summary>
+      API and backend solutions engineer with 6 years of experience.  Develops high-quality and robust service solutions using a variety of tools including SQL databases, NoSQL databases, and event streams.  A strong knowledge of cloud best-practices and a history of deploying dozens of applications to live environments with hundreds of thousands of users.  AWS cloud practitioner certified.  Expertise in Scala, Go, Python, and TypeScript.
+    </summary>
+  </header>
+
+  <experience
+    business="The Walt Disney Company"
+    title="Software Engineer II"
+  >
+    <start-date year="2022" month="6" />
+    <end-date year="2025" month="8" />
+
+    <detail>
+      I developed live micro-services with APIs that helped teams share data more easily amongst eachother (ex. Kinesis Replicator, Kinesis Snapshotter, and Openlineage service)
+    </detail>
+    <detail>
+      I built a tool to automate the deployment of data ingestion pipelines.  It unified GitHub queries, Jenkins jobs, Databricks API calls, and Slack notifications calls to deploy and manage pipelines.
+    </detail>
+    <detail>
+      I developed build pipelins in Jenkins and GitHub Workflows to compile, test, and run verification steps on my team and other teams codebases.  This includes the work I did with generating code.
+    </detail>
+    <detail>
+      I worked with Kubernetes, Datadog, and AWS CloudWatch to monitor and ensure production stability.
+    </detail>
+  </experience>
+
+  <experience
+    business="Topl"
+    title="Blockchain Platform Engineer"
+  >
+    <start-date year="2021" month="3" />
+    <end-date year="2022" month="5" />
+    <detail>
+      I developed a tool to query blockchain transactions using key-field and full-text searches.  The service was deployed with a MongoDB for indexing data and could be accessed using an authenticated Protobuf endpoint with query streaming support.
+    </detail>
+    <detail>
+      I developed an API for managing staking and wallet keys in blockchain nodes.
+    </detail>
+    <detail>
+      I implemented end-to-end API tests using Postman with CI/CD integration using the Newman test runner.  The tests provided coverage over API use-cases and also provided documentation for end users on how to call the API's actions.
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="Software Engineer I &amp; II"
+  >
+    <start-date year="2019" month="9" />
+    <end-date year="2021" month="4" />
+    <detail>
+      I implemented new pages, components, and functionality for a cloud web application for managing construction software
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="QA Automation Engineer"
+  >
+    <start-date year="2018" month="8" />
+    <end-date year="2019" month="8" />
+    <detail>
+      <!-- TODO -->
+    </detail>
+  </experience>
+
+  <education
+    school="University of Portland"
+    degree="Bachelors of Science"
+  >
+    <start-date year="2015" month="8" />
+    <end-date year="2019" month="5" />
+    <detail>Computer Science Major</detail>
+    <detail>Mathematics Minor</detail>
+  </education>
+
+  <certification name="AWS Cloud Practitioner" />
+
+  <skills group="TODO">
+    <skill><!-- TODO --></skill>
+  </skills>
+
+</resume-content>
