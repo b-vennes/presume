@@ -4,7 +4,9 @@
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@1",
+    "@std/fs": "jsr:@std/fs@^1.0.19",
     "@tailwindcss/cli": "npm:@tailwindcss/cli@^4.1.14",
+    "puppeteer": "npm:puppeteer@^24.25.0",
     "tailwindcss": "npm:tailwindcss@^4.1.14"
   },
   "nodeModulesDir": "auto"
