@@ -15,7 +15,7 @@
     github="b-vennes"
   >
     <summary>
-      Software engineer with six years of experience building full-stack and platform applications and services.  Passionate about building high-quality software with rigorous testing, build, and deployment strategies to always ensure high-availability.  Expert with developing in Scala, C#, TypeScript, and Python.
+      <!-- TODO -->
     </summary>
   </header>
 
@@ -27,12 +27,7 @@
     <end-date year="2025" month="8" />
 
     <detail>
-      Developed a suite of tools for integrating with AWS Kinesis streams using stongly-typed data schemas
-    </detail>
-    <detail>
-      Constructed build pipelines with Scala, Java, and Python code generation
-    </detail>
-    <detail>
+      <!-- TODO -->
     </detail>
   </experience>
 

@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  /* Overriding font sizes to make everything fit on one page. */
+  --text-xs: 0.5rem;
+  --text-sm: 0.7rem;
+  --text-base: 0.8rem;
+  --text-lg: 1rem;
+  --text-xl: 1.1rem;
+  --text-2xl: 1.3rem;
+}
