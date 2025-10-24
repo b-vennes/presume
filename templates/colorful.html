@@ -31,14 +31,18 @@
               <p class="italic text-xs font-medium text-blue-600">Email</p>
               <p class="text-xs font-semibold text-slate-800">{{- .Header.Email -}}</p>
             </div>
-            <div class="flex flex-row rounded-full border-2 border-indigo-400 px-3 py-1 gap-2">
-              <p class="italic text-xs font-medium text-indigo-600">GitHub</p>
-              <p class="text-xs font-semibold text-slate-800">{{- .Header.Github -}}</p>
-            </div>
-            <div class="flex flex-row rounded-full border-2 border-pink-400 px-3 py-1 gap-2">
-              <p class="italic text-xs font-medium text-pink-600">Site</p>
-              <p class="text-xs font-semibold text-slate-800">{{- .Header.Site -}}</p>
-            </div>
+            {{ if .Header.Github }}
+              <div class="flex flex-row rounded-full border-2 border-indigo-400 px-3 py-1 gap-2">
+                <p class="italic text-xs font-medium text-indigo-600">GitHub</p>
+                <p class="text-xs font-semibold text-slate-800">{{- .Header.Github -}}</p>
+              </div>
+            {{end}}
+            {{ if .Header.Site }}
+              <div class="flex flex-row rounded-full border-2 border-pink-400 px-3 py-1 gap-2">
+                <p class="italic text-xs font-medium text-pink-600">Site</p>
+                <p class="text-xs font-semibold text-slate-800">{{- .Header.Site -}}</p>
+              </div>
+            {{end}}
           </div>
         </div>
 

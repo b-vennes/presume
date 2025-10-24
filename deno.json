@@ -3,12 +3,12 @@
     "tailwind": "tailwindcss"
   },
   "imports": {
-    "@std/assert": "jsr:@std/assert@1",
+    "@std/assert": "jsr:@std/assert@^1.0.15",
     "@std/cli": "jsr:@std/cli@^1.0.23",
     "@std/fs": "jsr:@std/fs@^1.0.19",
-    "@tailwindcss/cli": "npm:@tailwindcss/cli@^4.1.14",
-    "puppeteer": "npm:puppeteer@^24.25.0",
-    "tailwindcss": "npm:tailwindcss@^4.1.14"
+    "@tailwindcss/cli": "npm:@tailwindcss/cli@^4.1.16",
+    "puppeteer": "npm:puppeteer@^24.26.1",
+    "tailwindcss": "npm:tailwindcss@^4.1.16"
   },
   "nodeModulesDir": "auto"
 }

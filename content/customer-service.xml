@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Empty CV with name and companies filled out.
+-->
+<resume-content
+  xmlns="https://github.com/b-vennes/presume"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://github.com/b-vennes/presume cv-schema.xsd"
+>
+
+  <header
+    name="Branden Vennes"
+    email="b.n.vennes@gmail.com"
+  >
+    <summary>
+      Technology professional with over six years of experience working on highly-collaborative teams requiring complex technical skills, clear communication, and quick on-the-fly learning.
+    </summary>
+  </header>
+
+  <experience
+    business="The Walt Disney Company"
+    title="Software Engineer II"
+  >
+    <start-date year="2022" month="6" />
+    <end-date year="2025" month="8" />
+
+    <detail>
+      Developed software on a team of five people using efficient organizational strategies, planning, and effective communication
+    </detail>
+    <detail>
+
+    </detail>
+  </experience>
+
+  <experience
+    business="Topl"
+    title="Blockchain Platform Engineer"
+  >
+    <start-date year="2021" month="3" />
+    <end-date year="2022" month="5" />
+    <detail>
+      Worked collaboratively with the management team to deliver strong output and results in a fast-paced startup environment
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="Software Engineer I &amp; II"
+  >
+    <start-date year="2019" month="9" />
+    <end-date year="2021" month="4" />
+    <detail>
+      I worked alongside a team of eight people with varying levels of abilities, experience, and
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="QA Automation Engineer"
+  >
+    <start-date year="2018" month="8" />
+    <end-date year="2019" month="8" />
+    <detail>
+      <!-- TODO -->
+    </detail>
+  </experience>
+
+  <education
+    school="University of Portland"
+    degree="Bachelors of Science"
+  >
+    <start-date year="2015" month="8" />
+    <end-date year="2019" month="5" />
+    <detail>Computer Science Major</detail>
+    <detail>Mathematics Minor</detail>
+  </education>
+
+  <skills group="Customer Service">
+    <skill>Patient and Friendly Attitude</skill>
+  </skills>
+  <skills group="Teamwork">
+    <skill>Clear Verbal Communicator</skill>
+    <skill>Descriptive and Fluent Writer</skill>
+    <skill>Efficient Organizer</skill>
+  </skills>
+
+</resume-content>

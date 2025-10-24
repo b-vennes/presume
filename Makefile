@@ -10,3 +10,9 @@ backend.html: generated.css
 
 backend.pdf: backend.html
 	deno run -A GeneratePDF.ts --statics ./$(generated_dir) --cv backend.html --output ./$(generated_dir)/backend.pdf
+
+customer-service.html: generated.css
+	go run main.go generate -c ./$(content_dir)/customer-service.xml -t ./$(templates_dir)/colorful.html -o ./$(generated_dir)/customer-service.html
+
+customer-service.pdf: customer-service.html
+	deno run -A GeneratePDF.ts --statics ./$(generated_dir) --cv customer-service.html --output ./$(generated_dir)/customer-service.pdf
