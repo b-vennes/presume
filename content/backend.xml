@@ -28,13 +28,15 @@
     <end-date year="2025" month="8" />
 
     <detail>
-      I developed live micro-services with APIs that helped teams share data more easily amongst eachother (ex. Kinesis Replicator, Kinesis Snapshotter, and Openlineage service)
+      Developed production ready microservices supporting internal development teams with easier access to event-driven architectures and tooling including stream replication, snapshot, and lineage tracing services
     </detail>
     <detail>
-      I built a tool to automate the deployment of data ingestion pipelines.  It unified GitHub queries, Jenkins jobs, Databricks API calls, and Slack notifications calls to deploy and manage pipelines.
+      Automated the deployment of data ingestion pipelines unifying tedious tasks across GitHub, Jenkins, Databricks, and Slack into a single streamlined workflow
     </detail>
     <detail>
       I developed build pipelins in Jenkins and GitHub Workflows to compile, test, and run verification steps on my team and other teams codebases.  This includes the work I did with generating code.
+
+      Constructed build pipelines with Jenkins and GitHub Workflows to automate the software development lifecycle including compilation, testing, verification, and approval
     </detail>
     <detail>
       I worked with Kubernetes, Datadog, and AWS CloudWatch to monitor and ensure production stability.

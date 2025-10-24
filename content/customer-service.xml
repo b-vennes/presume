@@ -12,10 +12,9 @@
   <header
     name="Branden Vennes"
     email="b.n.vennes@gmail.com"
-    github="b-vennes"
   >
     <summary>
-      Software engineer with six years of experience building full-stack and platform applications and services.  Passionate about building high-quality software with rigorous testing, build, and deployment strategies to always ensure high-availability.  Expert with developing in Scala, C#, TypeScript, and Python.
+      Technology professional with over six years of experience working on highly-collaborative teams requiring complex technical skills, clear communication, and quick on-the-fly learning.
     </summary>
   </header>
 
@@ -27,12 +26,10 @@
     <end-date year="2025" month="8" />
 
     <detail>
-      Developed a suite of tools for integrating with AWS Kinesis streams using stongly-typed data schemas
+      Developed software on a team of five people using efficient organizational strategies, planning, and effective communication
     </detail>
     <detail>
-      Constructed build pipelines with Scala, Java, and Python code generation
-    </detail>
-    <detail>
+
     </detail>
   </experience>
 
@@ -43,7 +40,7 @@
     <start-date year="2021" month="3" />
     <end-date year="2022" month="5" />
     <detail>
-      <!-- TODO -->
+      Worked collaboratively with the management team to deliver strong output and results in a fast-paced startup environment
     </detail>
   </experience>
 
@@ -54,7 +51,7 @@
     <start-date year="2019" month="9" />
     <end-date year="2021" month="4" />
     <detail>
-      <!-- TODO -->
+      I worked alongside a team of eight people with varying levels of abilities, experience, and
     </detail>
   </experience>
 
@@ -79,10 +76,13 @@
     <detail>Mathematics Minor</detail>
   </education>
 
-  <certification name="AWS Cloud Practitioner"/>
-
-  <skills group="TODO">
-    <skill><!-- TODO --></skill>
+  <skills group="Customer Service">
+    <skill>Patient and Friendly Attitude</skill>
+  </skills>
+  <skills group="Teamwork">
+    <skill>Clear Verbal Communicator</skill>
+    <skill>Descriptive and Fluent Writer</skill>
+    <skill>Efficient Organizer</skill>
   </skills>
 
 </resume-content>
