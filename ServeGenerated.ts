@@ -1,10 +1,17 @@
 import { handleRequest } from "./StaticServer.ts";
-import { env } from "node:process";
+import { parseArgs } from "@std/cli/parse-args";
 
-const statics = env.GENERATED;
+const flags = parseArgs(
+  Deno.args,
+  {
+    string: ["statics"]
+  }
+)
+
+const statics = flags.statics
 
 if (!statics) {
-  throw "No generated directory configured (env GENERATED).";
+  throw "No generated directory configured (--statics).";
 }
 
 export default {

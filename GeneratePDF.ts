@@ -11,19 +11,19 @@ const flags = parseArgs(Deno.args,
 const statics = flags.statics;
 
 if (!statics) {
-  throw "No generated directory configured (env GENERATED).";
+  throw "No generated directory configured (--statics).";
 }
 
 const cv = flags.cv;
 
 if (!cv) {
-  throw "No CV path provided (env CV)."
+  throw "No CV path provided (--cv)."
 }
 
 const output = flags.output;
 
 if (!output) {
-  throw "No output path provided (env OUTPUT)."
+  throw "No output path provided (--output)."
 }
 
 const server = Deno.serve(async (req) => {

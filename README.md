@@ -4,30 +4,28 @@ Generate a CV using an HTML Go template and typed XML content.
 
 The [Go toolchain](https://go.dev/dl/) is required to build and run the application.
 
-The `cv-content` directory contains some examples of my CVs. The `cv-content/cv-schema.xsd` file contains the defined XML schema.
+The `content` directory contains some examples of my CVs. The `content/cv-schema.xsd` file contains the defined XML schema.
 
-## Build
-
-`make presume`
-
-## Run
+## Run Hydration Tool
 
 ### Generate
 
-First, set arguments to the generate command in the `GENERATE_ARGS` environment variable.
+Given an XML CV content file located in `content.xml`, an HTML CV template located in `template.html`, and an expected output at `result.html` run:
 
-`export GENERATE_ARGS="-c ./cv-content/general.xml -t ./cv-template/colorful.html -o ./generated/general.html"`
+`go run main.go -c content.xml -t template.html -o result.html`
 
-Then,
+## Full PDF Builds
 
-`make generate`
+For my own CVs, I've set up a Makefile which runs the entire process for building some particular CVs I've developed.
 
-### Serve
+### Backend CV
 
-First, set arguments to the serve command in the `SERVE_ARGS` environment variable.
+`make backend.pdf`
 
-`export SERVE_ARGS="-dir ./generated"`
+The hydrated PDF file will be saved to `./generated/backend.pdf`.
 
-Then,
+### QA Engineer CV
 
-`make serve`
+`make qa-engineer.pdf`
+
+The hydrated PDF file will be saved to `./generated/qa-engineer.pdf`.

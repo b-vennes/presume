@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  CV for QA engineering focused positions.
+-->
+<resume-content
+  xmlns="https://github.com/b-vennes/presume"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://github.com/b-vennes/presume cv-schema.xsd"
+>
+
+  <header
+    name="Branden Vennes"
+    email="b.n.vennes@gmail.com"
+    github="b-vennes"
+    site="www.brandenvennes.com"
+  >
+    <summary>
+      Software developer and QA engineer with over six years of experience working across the software development life-cycle. Ensures high-quality software across all stages of development from the architecture and design phase to release regression testing and production monitoring. AWS Cloud Practitioner certified. Polyglot engineer with expertise writing systems in Scala, C#, Go, Python, and TypeScript.
+    </summary>
+  </header>
+
+  <experience
+    business="The Walt Disney Company"
+    title="Software Engineer II"
+  >
+    <start-date year="2022" month="6" />
+    <end-date year="2025" month="8" />
+
+    <detail>
+      Implemented functionality and end-to-end testing of micro-services and streaming data processors using Docker Compose with services and dependencies running in containerized contexts, executed within the CI and build process of every change-set
+    </detail>
+    <detail>
+      Tested the scalability of processing services using Gatling to produce millions of records in streams while monitoring logs and metrics to ensure near-zero delay
+    </detail>
+    <detail>
+      Developed and micro-benchmarked streaming data libraries using Scala and the Java Micro-Benchmarking Harness to prove there were no regressions in performance and throughput of operations
+    </detail>
+  </experience>
+
+  <experience
+    business="Topl"
+    title="Blockchain Platform Engineer"
+  >
+    <start-date year="2021" month="3" />
+    <end-date year="2022" month="5" />
+    <detail>
+      Developed API tests in Postman which executed during continuous-integration builds with the Newman test runner, ensuring core functionality worked successfully without regression and provided use-case documentation to product clients.
+    </detail>
+    <detail>
+      Tested blockchain and API performance using Locust to ensure stability and correctness under extreme load
+    </detail>
+    <detail>
+      Supported production infrastructure composed of Digital Ocean Droplets running networked blockchain nodes packaged as JAR files
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="Software Engineer I &amp; II"
+  >
+    <start-date year="2019" month="9" />
+    <end-date year="2021" month="4" />
+    <detail>
+      Expanded the scope of the web construction project management platform by implementing features across the Angular front-end, .NET back-end, and Azure hosted data stores including MSSQL
+    </detail>
+    <detail>
+      Composed continuous integration and deployment pipelines with Azure DevOps and Azure Pipelines to improve the software development lifecycle and increase the team's software delivery time
+    </detail>
+    <detail>
+      Collaborated with the QA team to improve API documentation and stabilize UI component identification to vastly improve the delivery and stability of black-box API and UI testing
+    </detail>
+  </experience>
+
+  <experience
+    business="Viewpoint Construction Software"
+    title="QA Automation Engineer"
+  >
+    <start-date year="2018" month="8" />
+    <end-date year="2019" month="8" />
+    <detail>
+      Expanded the API and UI automation frameworks to support non-technical QA testers in writing more robust automated tests to greatly improve application test coverage
+    </detail>
+    <detail>
+      Ensured application stability in high-usage environments by running performance and load tests using JMeter and BlazeMeter
+    </detail>
+    <detail>
+      Improved the QA testing process by writing manual test cases, automating manual API and UI tests, and optimizing the execution time of existing tests
+    </detail>
+  </experience>
+
+  <education
+    school="University of Portland"
+    degree="Bachelors of Science"
+  >
+    <start-date year="2015" month="8" />
+    <end-date year="2019" month="5" />
+    <detail>Computer Science Major</detail>
+    <detail>Mathematics Minor</detail>
+  </education>
+
+  <certification name="AWS Cloud Practitioner"/>
+
+  <skills group="QA and Testing">
+    <skill>UI Automation: Selenium and Puppeteer</skill>
+    <skill>Performance Platforms: JMeter, BlazeMeter, Locust, and Gatling</skill>
+    <skill>Java Micro-Benchmarking Harness</skill>
+  </skills>
+  <skills group="DevOps">
+    <skill>CI/CD Pipelines: Jenkins, GitHub Actions, and Azure Pipelines</skill>
+    <skill>Source Control Tools: Git, Azure DevOps, and GitHub</skill>
+    <skill>Cloud Infrastructure: AWS, Azure, and Digital Ocean</skill>
+  </skills>
+  <skills group="Development">
+    <skill>Programming Languages: Scala, Go, Python, C#, and TypeScript</skill>
+    <skill>API Design: REST, Protobuf, and CQRS</skill>
+    <skill>Data Storage: PostgreSQL, MSSQL, AWS DynamoDB, Neo4j, and AWS Kinesis</skill>
+  </skills>
+
+</resume-content>
