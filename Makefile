@@ -16,3 +16,9 @@ backend.pdf: backend.html
 
 qa-engineer.pdf: qa-engineer.html
 	deno run -A GeneratePDF.ts --statics ./$(generated_dir) --cv qa-engineer.html --output ./$(generated_dir)/qa-engineer.pdf
+
+customer-service.html: generated.css
+	go run main.go generate -c ./$(content_dir)/customer-service.xml -t ./$(templates_dir)/colorful.html -o ./$(generated_dir)/customer-service.html
+
+customer-service.pdf: customer-service.html
+	deno run -A GeneratePDF.ts --statics ./$(generated_dir) --cv customer-service.html --output ./$(generated_dir)/customer-service.pdf
