@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
-  Empty CV with name and companies filled out.
+  Customer Service Resume for Branden Vennes
+  Focused on retail and coffee shop positions
 -->
 <resume-content
   xmlns="https://github.com/b-vennes/presume"
@@ -12,9 +13,10 @@
   <header
     name="Branden Vennes"
     email="b.n.vennes@gmail.com"
+    phone="503-277-0678"
   >
     <summary>
-      Technology professional with over six years of experience working on highly-collaborative teams requiring complex technical skills, clear communication, and quick on-the-fly learning.
+      Dedicated professional with over six years of experience in collaborative team environments requiring excellent communication, problem-solving, and customer service skills. Proven track record of adapting quickly to new situations, building positive relationships, and maintaining high standards of quality and efficiency.
     </summary>
   </header>
 
@@ -26,21 +28,30 @@
     <end-date year="2025" month="8" />
 
     <detail>
-      Developed software on a team of five people using efficient organizational strategies, planning, and effective communication
+      Collaborated with over 50 different teams to understand their needs, answer questions, and provide solutions in a fast-paced environment serving millions of users
     </detail>
     <detail>
-
+      Communicated complex information clearly to non-technical stakeholders through written documentation, presentations, and one-on-one conversations
+    </detail>
+    <detail>
+      Managed competing priorities and maintained attention to detail while working on multiple projects simultaneously
     </detail>
   </experience>
 
   <experience
     business="Topl"
-    title="Blockchain Platform Engineer"
+    title="Software Engineer"
   >
     <start-date year="2021" month="3" />
     <end-date year="2022" month="5" />
     <detail>
-      Worked collaboratively with the management team to deliver strong output and results in a fast-paced startup environment
+      Thrived in a fast-paced startup environment with constantly changing priorities and diverse responsibilities
+    </detail>
+    <detail>
+      Built strong working relationships with team members and management through clear communication and reliable follow-through
+    </detail>
+    <detail>
+      Identified opportunities to improve efficiency and implemented process improvements that saved time and reduced errors
     </detail>
   </experience>
 
@@ -51,18 +62,30 @@
     <start-date year="2019" month="9" />
     <end-date year="2021" month="4" />
     <detail>
-      I worked alongside a team of eight people with varying levels of abilities, experience, and
+      Worked directly with construction project stakeholders to understand their needs and delivered solutions that improved their daily workflows
+    </detail>
+    <detail>
+      Maintained organized records and documentation to ensure consistency and reliability across team projects
+    </detail>
+    <detail>
+      Collaborated with cross-functional teams including designers, managers, and other departments to achieve shared goals
     </detail>
   </experience>
 
   <experience
     business="Viewpoint Construction Software"
-    title="QA Automation Engineer"
+    title="Quality Assurance Engineer"
   >
     <start-date year="2018" month="8" />
     <end-date year="2019" month="8" />
     <detail>
-      <!-- TODO -->
+      Ensured consistent quality standards through meticulous attention to detail and systematic testing procedures
+    </detail>
+    <detail>
+      Created clear and organized documentation that helped team members understand and follow established processes
+    </detail>
+    <detail>
+      Communicated findings and recommendations effectively to management and development teams to drive improvements
     </detail>
   </experience>
 
@@ -78,11 +101,21 @@
 
   <skills group="Customer Service">
     <skill>Patient and Friendly Attitude</skill>
+    <skill>Empathetic Listener</skill>
+    <skill>Clear and Professional Communication</skill>
+    <skill>Problem-Solving and Conflict Resolution</skill>
   </skills>
-  <skills group="Teamwork">
-    <skill>Clear Verbal Communicator</skill>
-    <skill>Descriptive and Fluent Writer</skill>
-    <skill>Efficient Organizer</skill>
+  <skills group="Teamwork &amp; Organization">
+    <skill>Strong Verbal and Written Communication</skill>
+    <skill>Efficient Time Management</skill>
+    <skill>Effective Team Collaboration</skill>
+    <skill>Attention to Detail</skill>
+  </skills>
+  <skills group="Technical &amp; Adaptability">
+    <skill>Quick Learner with Strong Adaptability</skill>
+    <skill>Experience with Point-of-Sale Systems</skill>
+    <skill>Process Improvement and Optimization</skill>
+    <skill>Computer Proficiency</skill>
   </skills>
 
 </resume-content>

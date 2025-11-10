@@ -8,6 +8,7 @@
     "jsr:@std/internal@^1.0.12": "1.0.12",
     "jsr:@std/internal@^1.0.9": "1.0.12",
     "jsr:@std/path@^1.1.1": "1.1.2",
+    "npm:@tailwindcss/cli@4.1.16": "4.1.16",
     "npm:@tailwindcss/cli@^4.1.16": "4.1.16",
     "npm:@types/node@*": "24.2.0",
     "npm:puppeteer@^24.26.1": "24.26.1_devtools-protocol@0.0.1508733",

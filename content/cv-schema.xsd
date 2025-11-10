@@ -61,6 +61,10 @@
       name="site"
       type="xs:string"
     />
+    <xs:attribute
+      name="phone"
+      type="xs:string"
+    />
   </xs:complexType>
 
   <xs:complexType

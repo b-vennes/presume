@@ -82,6 +82,7 @@ type HeaderData struct {
 	Email   string `xml:"email,attr"`
 	Github  string `xml:"github,attr"`
 	Site    string `xml:"site,attr"`
+	Phone 	string `xml:"phone,attr"`
 	Summary string `xml:"summary"`
 }
 
@@ -103,6 +104,7 @@ type HeaderView struct {
 	Email   string
 	Github  string
 	Site    string
+	Phone		string
 	Summary string
 }
 
@@ -112,6 +114,7 @@ func MakeHeaderView(data HeaderData) HeaderView {
 		Email:   data.Email,
 		Github:  data.Github,
 		Site:    data.Site,
+		Phone:	 data.Phone,
 		Summary: data.Summary,
 	}
 }

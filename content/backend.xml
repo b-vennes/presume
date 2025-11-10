@@ -14,9 +14,10 @@
     email="b.n.vennes@gmail.com"
     github="b-vennes"
     site="www.brandenvennes.com"
+    phone="503-277-0678"
   >
     <summary>
-      API and backend solutions engineer with 6 years of experience.  Develops high-quality and robust service solutions using a variety of tools including SQL databases, NoSQL databases, and event streams.  A strong knowledge of cloud best-practices and a history of deploying dozens of applications to live environments with hundreds of thousands of users.  AWS cloud practitioner certified.  Expertise in Scala, Go, Python, and TypeScript.
+      API and backend solutions engineer with 6 years of experience.  Develops high-quality and robust software solutions using a variety of tools including object-oriented and functional languages, SQL and NoSQL databases, and event-driven paradigms.  A strong knowledge of cloud best-practices and a history of deploying dozens of applications to live environments.  AWS cloud practitioner certified.  Expertise in Scala, Java, Go, Python, and TypeScript.
     </summary>
   </header>
 
@@ -28,16 +29,13 @@
     <end-date year="2025" month="8" />
 
     <detail>
-      Developed micro-services with Scala, PostgreSQL, and AWS supporting development teams with streaming data functionality including replication, aggregation, and lineage tracing for thousands of AWS Kinesis streams
+      Developed internal services with Scala, PostgreSQL, and AWS supporting development teams in building event-driven applications including replication, aggregation, and lineage tracing for thousands of AWS Kinesis streams processing billions of events each day
     </detail>
     <detail>
-      Automated the deployment of data ingestion pipelines, integrating GitHub queries, Jenkins job execution, Databricks API interactions, and Slack notifications to automatically start and manage deployments
+      Automated the deployment of Spark data-processing jobs and pipelines, integrating GitHub queries, Jenkins build execution, Databricks API interactions, and Slack notifications to automatically start and manage deployments
     </detail>
     <detail>
-      Designed complex build pipelines in Jenkins and GitHub Actions to generate code, compile, test, and run verification and approval workflows
-    </detail>
-    <detail>
-      Monitored over twenty services in production using Kubernetes, Datadog, and AWS CloudWatch
+      Designed build pipelines using Jenkins and GitHub Actions to generate and publish libraries for interacting with event streams using data schemas ensuring consistency and compatibility for production services
     </detail>
   </experience>
 
@@ -48,16 +46,16 @@
     <start-date year="2021" month="3" />
     <end-date year="2022" month="5" />
     <detail>
-      Provided a blockchain transactions query service using an authenticated streaming Protobuf endpoint implemented in Scala with MongoDB for indexing data 
+      Implemented a ledger query service using an authenticated streaming Protobuf endpoint implemented in Scala with MongoDB for indexing transactions
     </detail>
     <detail>
-      Designed and implemented an API for managing staking and wallet keys in blockchain nodes and viewing chain details
+      Designed and implemented an API for managing staking and wallet keys in blockchain nodes and viewing chain and node metadata
     </detail>
     <detail>
-      Maintained critical blockchain node domain rules to ensure application stability, security, and safety
+      Maintained critical blockchain node domain rules to ensure application stability, security, and safety while adding features and product updates
     </detail>
     <detail>
-      Wrote end-to-end API tests using Postman with CI/CD integration using the Newman test runner providing coverage over API use-cases and example documentation for end users
+      Wrote end-to-end API tests in Postman with CI/CD integration using the Newman test runner providing coverage over API use-cases and example documentation for end users
     </detail>
   </experience>
 
@@ -71,10 +69,10 @@
       Implemented Angular pages and components, API endpoints and state in C#, and data schemas for the cloud web application providing project planning, organization, and collaboration to key stakeholders of construction projects
     </detail>
     <detail>
-      Designed and developed a change order management system using an event-driven architecture and synchronization with the comapny's ERP system using Kafka
+      Designed and developed a change order management system using an event-sourcing architecture and synchronization with the comapny's ERP system using Kafka
     </detail>
     <detail>
-      Managed a large MSSQL database containing hundreds of tables and millions of records with optimized schema design, materialized views, and careful indexing to ensure maximum responsiveness and guaranteed consistency for users
+      Managed an MSSQL database containing hundreds of tables and millions of records with optimized schema design, materialized views, and careful indexing to ensure responsiveness and data consistency
     </detail>
   </experience>
 
@@ -88,7 +86,10 @@
       Expanded the API and UI automation framework to support QA engineers with writing more robust automated tests
     </detail>
     <detail>
-      Executed performance and load tests to verify application platform stability under high-stress
+      Maintained automated tests to ensure reliable results from nightly test runs providing useful feedback and support for developers
+    </detail>
+    <detail>
+      Executed API endpoint performance and load tests to verify application platform stability under high-stress
     </detail>
   </experience>
 
@@ -105,16 +106,16 @@
   <certification name="AWS Cloud Practitioner" />
 
   <skills group="Application Layer">
-    <skill>Languages: Scala, Go, Python, and TypeScript</skill>
+    <skill>Languages: Scala, Java, Go, Python, and TypeScript</skill>
     <skill>API Design: REST, Protobuf, and CQRS</skill>
     <skill>Asynchronous and Multithreaded Design</skill>
-    <skill>Object-Oriented and Functional Techniques</skill>
+    <skill>Object-Oriented and Functional Programming</skill>
   </skills>
   <skills group="Data Layer">
     <skill>SQL Databases: PostgreSQL and MSSQL</skill>
     <skill>Document Databases: AWS DynamoDB and MongoDB</skill>
     <skill>Graph Databases: Neo4j and AWS Neptune</skill>
-    <skill>Data Streams: AWS Kinesis and Apache Kafka</skill>
+    <skill>Data Streams and Analytics: Databricks, Spark, AWS Kinesis, and Apache Kafka</skill>
   </skills>
   <skills group="DevOps">
     <skill>Containers: Docker, Docker Swarm, and Kubernetes</skill>
